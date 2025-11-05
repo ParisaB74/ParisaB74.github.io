@@ -115,7 +115,7 @@ footer {
 
 .home-image img {
   width: 380px;
-  height: 3800px;
+  height: 380px;
   object-fit: cover;
   border-radius: 50%;
   border: 6px solid #004b8d;
@@ -162,6 +162,7 @@ footer {
     height: 300px;
   }
 }
+
 
 
 
