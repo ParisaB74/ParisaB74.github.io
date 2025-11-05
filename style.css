@@ -137,26 +137,27 @@ footer {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsive layout for small screens */
-@media (max-width: 900px) {
-  .home-hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 60px 5%;
-  }
+/* --- Test Layout --- */
+.home-hero {
+  display: flex !important;
+  background-color: #fafafa;
+  padding: 40px 8%;
+}
 
-  .home-text {
-    max-width: 100%;
-    text-align: center;
-  }
+.home-text {
+  flex: 1;
+  border: 1px solid red;   /* temporary visual guide */
+}
 
-  .home-image {
-    justify-content: center;
-    padding-right: 0;
-  }
+.home-image {
+  flex: 1;
+  border: 1px solid blue;  /* temporary visual guide */
+  display: flex;
+  justify-content: flex-end;
+}
 
-  .home-image img {
-    width: 300px;
-    height: 300px;
-  }
+.home-image img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
 }
