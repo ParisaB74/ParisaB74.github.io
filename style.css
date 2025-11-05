@@ -7,14 +7,19 @@ body {
 
 /* Header */
 header {
-  position: fixed;  /* keeps toolbar at top */
+  position: fixed;       /* keeps toolbar visible */
   top: 0;
   left: 0;
   width: 100%;
-  background-color: white;  /* toolbar color */
-  z-index: 1000;  /* make sure it stays above other elements */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* optional shadow */
+  background-color: white;  /* keep toolbar white */
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between; /* logo left, tabs right */
+  align-items: center;
+  padding: 10px 20px;
 }
+
 
 /* Add some padding below header for content not to be hidden */
 body {
@@ -79,3 +84,4 @@ footer {
   color: #004b8d;
   margin: 0;
 }
+
