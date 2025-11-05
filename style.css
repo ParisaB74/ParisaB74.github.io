@@ -71,17 +71,36 @@ footer {
 }
 
 /* Hero section styling */
+
 .hero {
-  background-color: #f5f5f5; /* light grey */
+  background-color: #f5f5f5;
   text-align: center;
   padding: 100px 20px;
-  font-family: 'Roboto', Arial, sans-serif;
 }
 
+.hero-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px; /* space between check and text */
+}
+
+.check-box {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;   /* box width */
+  height: 50px;  /* box height */
+  border: 2px solid #004b8d; /* border color */
+  border-radius: 8px;  /* rounded corners */
+  font-size: 28px;     /* size of checkmark */
+  color: #004b8d;      /* checkmark color */
+  background-color: white; /* box background */
+}
+  
 .hero h1 {
   font-size: 48px;
   font-weight: 700;
   color: #004b8d;
   margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
 }
-
