@@ -87,12 +87,12 @@ footer {
 .hero {
   background-color: #f5f5f5;
   text-align: center;
-  padding: 40px 20px; /* reduce top & bottom padding */
+  padding: 60px 20px 40px;  /* space above & below slogan */
 }
 
 .hero-content {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 800px;        /* makes it narrower */
+  margin: 0 auto;          /* centers it */
 }
 
 .hero h1 {
@@ -101,6 +101,7 @@ footer {
   color: #004b8d;
   margin: 0;
 }
+
 
 /* Reduce gap between hero and home-hero */
 .home-hero {
@@ -178,6 +179,7 @@ header.scrolled {
     max-width: 200px; /* even smaller on very small devices */
   }
 }
+
 
 
 
