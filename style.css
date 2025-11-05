@@ -97,7 +97,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 100px 8%;
+   padding: 100px 6% 100px 14%;;
   background-color: #ffffff;
   gap: 60px;
 }
@@ -155,4 +155,5 @@ footer {
     height: 300px;
   }
 }
+
 
