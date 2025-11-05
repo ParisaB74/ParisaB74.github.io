@@ -104,7 +104,7 @@ footer {
 .home-text {
   flex: 1;
   max-width: 45%;
-  text-align: left; /* ensures text is left aligned */
+  text-align: left;
 }
 
 .home-text h1 {
@@ -120,12 +120,11 @@ footer {
   line-height: 1.6;
 }
 
-/* Right image */
 .home-image {
   flex: 1;
   display: flex;
   justify-content: flex-end;
-  padding-right: 100px; /* pushes it toward the right */
+  padding-right: 100px;
 }
 
 .home-image img {
@@ -137,27 +136,26 @@ footer {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* --- Test Layout --- */
-.home-hero {
-  display: flex !important;
-  background-color: #fafafa;
-  padding: 40px 8%;
-}
+/* Responsive */
+@media (max-width: 900px) {
+  .home-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 5%;
+  }
 
-.home-text {
-  flex: 1;
-  border: 1px solid red;   /* temporary visual guide */
-}
+  .home-text {
+    max-width: 100%;
+    text-align: center;
+  }
 
-.home-image {
-  flex: 1;
-  border: 1px solid blue;  /* temporary visual guide */
-  display: flex;
-  justify-content: flex-end;
-}
+  .home-image {
+    justify-content: center;
+    padding-top: 20px;
+  }
 
-.home-image img {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
+  .home-image img {
+    width: 300px;
+    height: 300px;
+  }
 }
