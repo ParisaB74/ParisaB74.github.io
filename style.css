@@ -10,11 +10,13 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #004b8d;
+  background-color: white;   /* Change toolbar to white */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: subtle shadow */
 }
 
 header .logo img {
-  height: 50px;
+  height: 80px;   /* Bigger logo */
+  width: auto;    /* Keep aspect ratio */
 }
 
 nav ul {
@@ -29,15 +31,16 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #004b8d;   /* Dark blue text instead of white */
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 4px;
+  font-weight: bold;
 }
 
 nav ul li a.active,
 nav ul li a:hover {
-  background-color: #003a73;
+  background-color: #e0e0e0;  /* Light grey hover effect */
 }
 
 main {
@@ -51,3 +54,4 @@ footer {
   margin: 40px 0;
   color: #777;
 }
+
