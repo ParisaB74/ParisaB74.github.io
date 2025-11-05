@@ -93,13 +93,12 @@ footer {
 
 
 .home-hero {
-  width: 100%;            /* full page width */
-  max-width: none;        /* ignore main max-width */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 60px;     /* space from page edges */
-  gap: 60px;              /* space between text and image */
+  width: 100%;
+  padding: 40px 40px 40px 40px; /* add enough space on right for image */
+  gap: 60px;
   background-color: #ffffff;
 }
 
@@ -115,8 +114,8 @@ footer {
 }
 
 .home-image img {
-  width: 450px;
-  height: 450px;
+  width: 380px;
+  height: 3800px;
   object-fit: cover;
   border-radius: 50%;
   border: 6px solid #004b8d;
@@ -163,6 +162,7 @@ footer {
     height: 300px;
   }
 }
+
 
 
 
