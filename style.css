@@ -93,15 +93,14 @@ footer {
 
 
 .home-hero {
+  width: 100%;            /* full page width */
+  max-width: none;        /* ignore main max-width */
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* keep text left, use auto margin for image */
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 40px; /* some space from page edges */
+  justify-content: space-between;
+  padding: 40px 60px;     /* space from page edges */
+  gap: 60px;              /* space between text and image */
   background-color: #ffffff;
-  gap: 40px; /* space between text and image */
 }
 
 .home-text {
@@ -111,8 +110,8 @@ footer {
 }
 
 .home-image {
-  flex: none;             /* don’t stretch */
-  margin-left: auto;      /* pushes image to far right */
+  flex: none;             /* don't stretch */
+  margin-left: auto;      /* push image to far right */
 }
 
 .home-image img {
@@ -164,6 +163,7 @@ footer {
     height: 300px;
   }
 }
+
 
 
 
