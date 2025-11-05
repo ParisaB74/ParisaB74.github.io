@@ -32,8 +32,9 @@ header nav {
 }
 /* Logo */
 header .logo img {
-  height: 100px;   /* Increased logo size */
+  height: 100px;   /* keep your bigger logo */
   width: auto;
+  margin-left: 20px; /* moves logo away from left edge */
 }
 
 /* Navigation */
@@ -89,6 +90,7 @@ footer {
   color: #004b8d; /* dark blue color, adjust as desired */
   margin: 0;
 }
+
 
 
 
