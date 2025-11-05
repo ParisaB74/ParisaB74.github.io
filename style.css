@@ -24,7 +24,7 @@ header {
 /* Add some padding below header for content not to be hidden */
 body {
   margin: 0;
-  padding-top: 80px; /* adjust based on header height */
+  padding-top: 100px; /* adjust based on header height */
 }
 
 /* Logo */
@@ -86,6 +86,7 @@ footer {
   color: #004b8d; /* dark blue color, adjust as desired */
   margin: 0;
 }
+
 
 
 
