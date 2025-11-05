@@ -28,13 +28,13 @@ body {
 }
 
 header nav {
-  margin-right: 20px; /* add space between tabs and right edge */
+  margin-right: 40px; /* add space between tabs and right edge */
 }
 /* Logo */
 header .logo img {
   height: 100px;   /* keep your bigger logo */
   width: auto;
-  margin-left: 20px; /* moves logo away from left edge */
+  margin-left: 40px; /* moves logo away from left edge */
 }
 
 /* Navigation */
@@ -90,6 +90,7 @@ footer {
   color: #004b8d; /* dark blue color, adjust as desired */
   margin: 0;
 }
+
 
 
 
