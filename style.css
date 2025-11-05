@@ -85,18 +85,22 @@ footer {
 /* Home hero section */
 
 .hero {
-  position: sticky;
-  top: 0;
-  background-color: #f5f5f5;
-  z-index: 999; /* stays above header if needed */
+  background-color: #f5f5f5; /* light grey */
+  text-align: center;
+  padding: 100px 20px;
+  font-family: 'Roboto', Arial, sans-serif;
 }
 
-.hero-content {
-  display: inline-flex;      /* align checkmark + text */
-  align-items: center;
-  gap: 15px;
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #004b8d;
+  margin: 0;
 }
-
+header.scrolled {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s;
+}
 .hero .check-box {
   display: inline-block;
   font-size: 50px;          /* big checkmark */
@@ -179,4 +183,5 @@ footer {
     max-width: 200px; /* even smaller on very small devices */
   }
 }
+
 
