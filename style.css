@@ -27,6 +27,9 @@ body {
   padding-top: 100px; /* adjust based on header height */
 }
 
+header nav {
+  margin-right: 20px; /* add space between tabs and right edge */
+}
 /* Logo */
 header .logo img {
   height: 100px;   /* Increased logo size */
@@ -86,6 +89,7 @@ footer {
   color: #004b8d; /* dark blue color, adjust as desired */
   margin: 0;
 }
+
 
 
 
