@@ -95,24 +95,24 @@ footer {
 .home-hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;           /* full width container */
-  max-width: 1200px;     /* optional, for large screens */
-  margin: 0 auto;         /* center container horizontally */
-  padding: 40px 20px;    /* space from edges of page */
+  justify-content: flex-start; /* keep text left, use auto margin for image */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 40px; /* some space from page edges */
   background-color: #ffffff;
+  gap: 40px; /* space between text and image */
 }
 
 .home-text {
   flex: 1;
-  max-width: 45%;        /* width of text column */
+  max-width: 45%;
   text-align: left;
 }
 
 .home-image {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end; /* pushes image to the far right */
+  flex: none;             /* don’t stretch */
+  margin-left: auto;      /* pushes image to far right */
 }
 
 .home-image img {
@@ -164,5 +164,6 @@ footer {
     height: 300px;
   }
 }
+
 
 
