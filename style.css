@@ -90,13 +90,16 @@ footer {
   align-items: center;
   width: 50px;   /* box width */
   height: 50px;  /* box height */
-  border: 2px solid #004b8d; /* border color */
-  border-radius: 8px;  /* rounded corners */
-  font-size: 28px;     /* size of checkmark */
-  color: #004b8d;      /* checkmark color */
-  background-color: white; /* box background */
+  border: 2px solid #004b8d;
+  border-radius: 8px;
+  font-size: 70px;        /* make checkmark big */
+  color: #004b8d;
+  background-color: white;
+  line-height: 1;
+  margin-left: -10px;      /* shift checkmark left, outside the box */
+  margin-top: -10px;       /* optional: shift up slightly */
 }
-  
+
 .hero h1 {
   font-size: 48px;
   font-weight: 700;
