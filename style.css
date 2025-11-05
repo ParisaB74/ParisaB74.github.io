@@ -92,20 +92,19 @@ footer {
 }
 
 
-/* Home hero layout */
 .home-hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 6% 100px 12%; /* reduce top space */
+  padding: 40px 10% 80px 10%;
   background-color: #ffffff;
-  gap: 60px;
+  gap: 80px;
 }
 
-/* Left text */
 .home-text {
   flex: 1;
   max-width: 45%;
+  text-align: left; /* ensures text is left aligned */
 }
 
 .home-text h1 {
@@ -125,29 +124,35 @@ footer {
 .home-image {
   flex: 1;
   display: flex;
-  justify-content: flex-end; /* aligns it to the right side */
-  padding-right: 80px; /* pushes it farther to the right edge */
+  justify-content: flex-end;
+  padding-right: 100px; /* pushes it toward the right */
 }
 
 .home-image img {
-  width: 420px;
-  height: 420px;
+  width: 450px;
+  height: 450px;
   object-fit: cover;
   border-radius: 50%;
   border: 6px solid #004b8d;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-
-/* Make responsive for smaller screens */
+/* Responsive layout for small screens */
 @media (max-width: 900px) {
   .home-hero {
     flex-direction: column;
     text-align: center;
+    padding: 60px 5%;
   }
 
-  .home-text, .home-image {
+  .home-text {
     max-width: 100%;
+    text-align: center;
+  }
+
+  .home-image {
+    justify-content: center;
+    padding-right: 0;
   }
 
   .home-image img {
@@ -155,6 +160,3 @@ footer {
     height: 300px;
   }
 }
-
-
-
