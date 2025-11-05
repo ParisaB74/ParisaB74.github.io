@@ -96,9 +96,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 10% 80px 10%;
+  padding: 40px 5% 80px 5%;
   background-color: #ffffff;
-  gap: 80px;
+  gap: 60px;
 }
 
 .home-text {
@@ -124,7 +124,7 @@ footer {
   flex: 1;
   display: flex;
   justify-content: flex-end;
-  padding-right: 100px;
+  padding-right: 50px;
 }
 
 .home-image img {
@@ -159,3 +159,4 @@ footer {
     height: 300px;
   }
 }
+
