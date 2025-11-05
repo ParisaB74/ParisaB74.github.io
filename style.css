@@ -85,10 +85,14 @@ footer {
 /* Home hero section */
 
 .hero {
-  background-color: #f5f5f5; /* light grey */
+  background-color: #f5f5f5;
   text-align: center;
-  padding: 100px 20px;
-  font-family: 'Roboto', Arial, sans-serif;
+  padding: 60px 20px 40px;  /* space above & below slogan */
+}
+
+.hero-content {
+  max-width: 800px;        /* makes it narrower */
+  margin: 0 auto;          /* centers it */
 }
 
 .hero h1 {
@@ -97,25 +101,12 @@ footer {
   color: #004b8d;
   margin: 0;
 }
+
 header.scrolled {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: box-shadow 0.3s;
 }
-.hero .check-box {
-  display: inline-block;
-  font-size: 50px;          /* big checkmark */
-  color: #004b8d;
-  border: 3px solid #004b8d;
-  border-radius: 8px;
-  padding: 10px;
-}
 
-.hero h1 {
-  font-size: 48px;
-  font-weight: 700;
-  color: #004b8d;
-  margin: 0;
-}
 
 .home-hero {
   display: flex;
@@ -183,5 +174,6 @@ header.scrolled {
     max-width: 200px; /* even smaller on very small devices */
   }
 }
+
 
 
