@@ -73,37 +73,16 @@ footer {
 /* Hero section styling */
 
 .hero {
-  background-color: #f5f5f5;
+  background-color: #f5f5f5; /* light grey background, adjust as needed */
   text-align: center;
-  padding: 100px 20px;
-}
-
-.hero-content {
-  display: inline-flex;
-  align-items: center;
-  gap: 15px; /* space between check and text */
-}
-
-.check-box {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;   /* box width */
-  height: 50px;  /* box height */
-  border: 2px solid #004b8d;
-  border-radius: 8px;
-  font-size: 70px;        /* make checkmark big */
-  color: #004b8d;
-  background-color: white;
-  line-height: 1;
-  margin-left: -10px;      /* shift checkmark left, outside the box */
-  margin-top: -10px;       /* optional: shift up slightly */
+  padding: 100px 20px; /* vertical padding */
+  font-family: 'Roboto', Arial, sans-serif; /* same font as toolbar/content */
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 48px; /* large font for slogan */
   font-weight: 700;
-  color: #004b8d;
+  color: #004b8d; /* dark blue color, adjust as desired */
   margin: 0;
-  font-family: 'Roboto', Arial, sans-serif;
 }
+
