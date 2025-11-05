@@ -125,17 +125,19 @@ footer {
 .home-image {
   flex: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; /* aligns it to the right side */
+  padding-right: 80px; /* pushes it farther to the right edge */
 }
 
 .home-image img {
-  width: 420px; /* bigger image */
+  width: 420px;
   height: 420px;
   object-fit: cover;
   border-radius: 50%;
   border: 6px solid #004b8d;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
+
 
 /* Make responsive for smaller screens */
 @media (max-width: 900px) {
@@ -153,3 +155,4 @@ footer {
     height: 300px;
   }
 }
+
