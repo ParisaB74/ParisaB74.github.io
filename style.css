@@ -87,7 +87,7 @@ footer {
 .hero {
   background-color: #f5f5f5;
   text-align: center;
-  padding: 80px 20px 60px; /* increase top & bottom padding */
+  padding: 150px 20px 120px; /* increase top & bottom padding */
 }
 
 .hero-content {
@@ -180,6 +180,7 @@ header.scrolled {
     max-width: 200px; /* even smaller on very small devices */
   }
 }
+
 
 
 
