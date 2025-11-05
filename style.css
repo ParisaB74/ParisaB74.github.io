@@ -7,12 +7,19 @@ body {
 
 /* Header */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: white;   /* Changed toolbar color to white */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* subtle shadow */
+  position: fixed;  /* keeps toolbar at top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;  /* toolbar color */
+  z-index: 1000;  /* make sure it stays above other elements */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* optional shadow */
+}
+
+/* Add some padding below header for content not to be hidden */
+body {
+  margin: 0;
+  padding-top: 80px; /* adjust based on header height */
 }
 
 /* Logo */
@@ -58,19 +65,17 @@ footer {
   color: #777;
 }
 
-
 /* Hero section styling */
 .hero {
-  background-color: #f5f5f5; /* light grey background, adjust as needed */
+  background-color: #f5f5f5; /* light grey */
   text-align: center;
-  padding: 100px 20px; /* vertical padding */
-  font-family: 'Roboto', Arial, sans-serif; /* same font as toolbar/content */
+  padding: 100px 20px;
+  font-family: 'Roboto', Arial, sans-serif;
 }
 
 .hero h1 {
-  font-size: 48px; /* large font for slogan */
+  font-size: 48px;
   font-weight: 700;
-  color: #004b8d; /* dark blue color, adjust as desired */
+  color: #004b8d;
   margin: 0;
 }
-
