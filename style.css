@@ -34,9 +34,10 @@ header .logo img {
 }
 
 /* Navigation */
-nav ul {
+header nav ul {
+  display: flex;           /* keeps all tabs in a single line */
+  flex-wrap: nowrap;       /* prevents wrapping */
   list-style: none;
-  display: flex;
   margin: 0;
   padding: 0;
 }
@@ -85,6 +86,7 @@ footer {
   color: #004b8d; /* dark blue color, adjust as desired */
   margin: 0;
 }
+
 
 
 
