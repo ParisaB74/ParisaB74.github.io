@@ -17,7 +17,7 @@ header {
 
 /* Logo */
 header .logo img {
-  height: 10px;   /* Increased logo size */
+  height: 100px;   /* Increased logo size */
   width: auto;
 }
 
@@ -57,3 +57,4 @@ footer {
   margin: 40px 0;
   color: #777;
 }
+
