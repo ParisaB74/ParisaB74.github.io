@@ -5,20 +5,23 @@ body {
   color: #333;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: white;   /* Change toolbar to white */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: subtle shadow */
+  background-color: white;   /* Changed toolbar color to white */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* subtle shadow */
 }
 
+/* Logo */
 header .logo img {
-  height: 80px;   /* Bigger logo */
-  width: auto;    /* Keep aspect ratio */
+  height: 80px;   /* Increased logo size */
+  width: auto;
 }
 
+/* Navigation */
 nav ul {
   list-style: none;
   display: flex;
@@ -31,7 +34,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #004b8d;   /* Dark blue text instead of white */
+  color: #004b8d;      /* Dark text for white toolbar */
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 4px;
@@ -40,7 +43,7 @@ nav ul li a {
 
 nav ul li a.active,
 nav ul li a:hover {
-  background-color: #e0e0e0;  /* Light grey hover effect */
+  background-color: #e0e0e0; /* light grey hover */
 }
 
 main {
@@ -54,4 +57,3 @@ footer {
   margin: 40px 0;
   color: #777;
 }
-
