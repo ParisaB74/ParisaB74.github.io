@@ -126,12 +126,12 @@ footer {
   flex: 1;
   display: flex;
   justify-content: flex-end;
-  padding-right: 100px;
+  padding-right: 150px;  
 }
 
 .home-image img {
-  width: 450px;
-  height: 450px;
+  width: 350px;           /* smaller width */
+  height: 350px;          /* smaller height */
   object-fit: cover;
   border-radius: 50%;
   border: 6px solid #004b8d;
@@ -210,6 +210,7 @@ footer {
     height: 300px;
   }
 }
+
 
 
 
