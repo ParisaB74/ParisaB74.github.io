@@ -146,7 +146,7 @@ footer {
   justify-content: space-between;
   padding: 60px 5% 60px 5%;
   background-color: #f5f5f5;
-  gap: 40px; /* smaller gap between text and image */
+  gap: 20px; /* smaller gap between text and image */
   flex-wrap: wrap; /* allow wrapping on small screens */
 }
 
@@ -173,7 +173,7 @@ footer {
 }
 .secondary-hero h1 {
   font-size: 42px;
-  color: #333;
+  color: #004b8d;
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -210,6 +210,7 @@ footer {
     height: 300px;
   }
 }
+
 
 
 
