@@ -80,7 +80,7 @@ footer {
 .hero {
   background-color: #f5f5f5;
   text-align: center;
-  padding: 100px 20px 100px; /* taller top and bottom padding */
+  padding: 120px 20px 120px; /* taller top and bottom padding */
   width: 100%;             /* full width */
   box-sizing: border-box;   /* ensures padding doesn't add extra width */
   margin: 0 auto;
@@ -210,5 +210,6 @@ footer {
     height: 300px;
   }
 }
+
 
 
