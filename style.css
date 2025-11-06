@@ -117,7 +117,7 @@ footer {
 }
 
 .home-text p {
-  font-size: 18px;
+  font-size: 25px;
   color: #333;
   line-height: 1.6;
 }
@@ -152,7 +152,7 @@ footer {
   flex: 1;
   display: flex;
   justify-content: flex-start;
-  padding-left: 50px;
+  padding-left: 5px;
 }
 
 .secondary-image img {
@@ -170,15 +170,8 @@ footer {
   text-align: left;
 }
 
-.secondary-text h2 {
-  font-size: 42px;
-  color: #004b8d;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
 .secondary-text p {
-  font-size: 18px;
+  font-size: 25px;
   color: #333;
   line-height: 1.6;
 }
@@ -210,6 +203,7 @@ footer {
     height: 300px;
   }
 }
+
 
 
 
