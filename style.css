@@ -296,7 +296,7 @@ footer {
   background-color: #002f5c;
 }
 
-.hero-3 image {
+.hero-3-image {
   flex: 1;
   display: flex;
   justify-content: flex-end;
@@ -312,6 +312,7 @@ footer {
   border: 6px solid #004b8d;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
+
 
 
 
