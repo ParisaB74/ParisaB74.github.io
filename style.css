@@ -309,9 +309,10 @@ footer {
   height: 350px;          /* smaller height */
   object-fit: cover;
   border-radius: 50%;
-  border: 6px solid #004b8d;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border: none;
+  box-shadow: none;
 }
+
 
 
 
