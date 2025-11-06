@@ -211,7 +211,7 @@ footer {
   }
 }
 
-.hero-3 {
+.hero-4 {
   background-color: #e8f1ff; /* light blue */
   display: flex;
   justify-content: center; /* horizontal centering */
@@ -221,14 +221,14 @@ footer {
   flex-direction: column;
 }
 
-.hero-3 h2 {
+.hero-4 h2 {
   font-size: 2.5rem;
   font-weight: 700;
   color: #004b8d;
   margin-bottom: 25px;
 }
 
-.hero-3 p {
+.hero-4 p {
   font-size: 1.3rem;
   color: #333;
   line-height: 1.8;
@@ -236,7 +236,7 @@ footer {
   margin: 15px 0;
 }
 
-.hero-3 .button {
+.hero-4 .button {
   display: inline-block;
   background-color: #004b8d;
   color: white;
@@ -248,40 +248,40 @@ footer {
   transition: background-color 0.3s;
 }
 
-.hero-3 .button:hover {
+.hero-4 .button:hover {
   background-color: #002f5c;
 }
-.hero-no-obligation {
+.hero-3 {
   background-color: #fff3e0; /* light orange */
   padding: 80px 10%;
 }
 
-.hero-no-obligation-container {
+.hero-3-container {
   display: flex;
   align-items: center;
   gap: 50px;
   flex-wrap: wrap;
 }
 
-.hero-no-obligation-text {
+.hero-3-text {
   flex: 1;
 }
 
-.hero-no-obligation-text h2 {
+.hero-3-text h2 {
   font-size: 2.5rem;
   font-weight: 700;
   color: #e67e22;
   margin-bottom: 20px;
 }
 
-.hero-no-obligation-text p {
+.hero-3-text p {
   font-size: 1.25rem;
   line-height: 1.8;
   color: #333;
   text-align: justify;
 }
 
-.hero-no-obligation .button {
+.hero-3 .button {
   display: inline-block;
   background-color: #004b8d;
   color: white;
@@ -293,23 +293,24 @@ footer {
   transition: background-color 0.3s;
 }
 
-.hero-no-obligation .button:hover {
+.hero-3 .button:hover {
   background-color: #002f5c;
 }
 
-.hero-no-obligation-image {
+.hero-3-image {
   flex: 1;
   display: flex;
   justify-content: flex-end; /* image on right */
 }
 
-.hero-no-obligation-image img {
+.hero-3-image img {
   max-width: 400px;
   width: 100%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
+
 
 
 
