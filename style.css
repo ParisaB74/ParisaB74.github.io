@@ -103,7 +103,6 @@ footer {
 }
 
 
-
 /* Reduce gap between hero and home-hero */
 .home-hero {
   margin-top: 20px; /* smaller than before */
@@ -122,8 +121,6 @@ header.scrolled {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: box-shadow 0.3s;
 }
-
-
 
 /* Text column */
 .home-text {
@@ -202,18 +199,12 @@ header.scrolled {
 }
 
 .secondary-text h2 {
-  font-size: 36px;
+  font-size: 28px;
   color: #004b8d;
   margin-bottom: 20px;
   font-weight: 700;
 }
 
-.secondary-text p {
-  font-size: 18px;
-  color: #333;
-  line-height: 1.8;
-  margin-bottom: 20px;
-}
 
 /* Image column */
 .secondary-image {
@@ -266,10 +257,8 @@ header.scrolled {
     font-size: 28px;
   }
 
-  .secondary-text p {
-    font-size: 16px;
-  }
 }
+
 
 
 
