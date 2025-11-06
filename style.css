@@ -253,7 +253,7 @@ footer {
 }
 .hero-3 {
   background-color: #ffffff;
-  padding: 80px 10%;
+  padding: 50px 8%;
   display: flex;
   justify-content: center; /* Centers the content horizontally */
 }
@@ -300,11 +300,14 @@ footer {
   background-color: #002f5c;
 }
 
-.hero-3-image {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end; /* image on right */
+.hero-3 img {
+  width: 200px; /* adjust as needed */
+  height: 200px;
+  border-radius: 50%; /* makes image circular */
+  object-fit: cover; /* keeps image nicely cropped */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* optional for elegance */
 }
+
 
 .hero-3-image img {
   max-width: 400px;
@@ -313,6 +316,7 @@ footer {
   border-radius: 10px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
+
 
 
 
