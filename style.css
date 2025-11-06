@@ -213,12 +213,12 @@ header.scrolled {
 }
 
 .secondary-image img {
-  width: 100%;
-  max-width: 450px;
-  height: auto;
-  border-radius: 50%;
+  width: 400px;          /* fixed size for circle */
+  height: 400px;         /* equal height ensures perfect circle */
+  object-fit: cover;     /* prevents distortion */
+  border-radius: 50%;    /* makes it circular */
   border: 6px solid #004b8d;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Responsive for tablets & mobiles */
@@ -258,6 +258,7 @@ header.scrolled {
   }
 
 }
+
 
 
 
