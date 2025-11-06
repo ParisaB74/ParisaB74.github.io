@@ -213,21 +213,20 @@ header.scrolled {
 }
 
 .secondary-image img {
-  width: 400px;          /* fixed size for circle */
-  height: 400px;         /* equal height ensures perfect circle */
-  object-fit: cover;     /* prevents distortion */
-  border-radius: 50%;    /* makes it circular */
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 50%;
   border: 6px solid #004b8d;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
+
 /* Responsive for tablets & mobiles */
 @media (max-width: 900px) {
-  .secondary-hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 5%;
-    gap: 30px;
+  .secondary-image img {
+    width: 300px;
+    height: 300px;
   }
 
   .secondary-text {
@@ -245,10 +244,11 @@ header.scrolled {
 }
 
 @media (max-width: 500px) {
-  .secondary-hero {
-    padding: 30px 5%;
+  .secondary-image img {
+    width: 200px;
+    height: 200px;
   }
-
+}
   .secondary-image img {
     max-width: 200px;
   }
@@ -258,6 +258,7 @@ header.scrolled {
   }
 
 }
+
 
 
 
