@@ -212,9 +212,13 @@ footer {
 }
 
 .hero-3 {
-  background-color: #e8f1ff;  /* light blue background */
+   background-color: #e8f1ff; /* light blue */
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering */
   text-align: center;
   padding: 80px 20px;
+  flex-direction: column;
 }
 
 .hero-3 h2 {
@@ -309,6 +313,7 @@ footer {
   border-radius: 10px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
+
 
 
 
