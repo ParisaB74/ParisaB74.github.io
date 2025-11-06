@@ -98,14 +98,15 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 10% 80px 10%;
+  padding: 40px 5% 80px 5%;
   background-color: #ffffff;
-  gap: 80px;
+  gap: 40px; /* smaller gap between text and image */
+  flex-wrap: wrap; /* allow wrapping on small screens */
 }
 
 .home-text {
   flex: 1;
-  max-width: 45%;
+  max-width: 50%;
   text-align: left;
 }
 
@@ -143,9 +144,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 10% 80px 10%;
-  background-color: #ffffff;
-  gap: 80px;
+  padding: 40px 5% 80px 5%;
+  background-color: #f5f5f5;
+  gap: 40px; /* smaller gap between text and image */
+  flex-wrap: wrap; /* allow wrapping on small screens */
 }
 
 .secondary-image {
@@ -203,6 +205,7 @@ footer {
     height: 300px;
   }
 }
+
 
 
 
