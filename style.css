@@ -252,36 +252,32 @@ footer {
   background-color: #002f5c;
 }
 .hero-3 {
-  background-color: #ffffff;
-  padding: 50px 8%;
-  display: flex;
-  justify-content: center; /* Centers the content horizontally */
-}
-
-
-.hero-3-container {
   display: flex;
   align-items: center;
-  gap: 50px;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px 5% 60px 5%;
+  background-color: #ffffff;
+  gap: 40px; /* smaller gap between text and image */
+  flex-wrap: wrap; /* allow wrapping on small screens */
 }
 
 .hero-3-text {
-  flex: 1;
+   flex: 1;
+  max-width: 50%;
+  text-align: justify;
 }
 
 .hero-3-text h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
+ font-size: 42px;
   color: #004b8d;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .hero-3-text p {
-  font-size: 1.25rem;
-  line-height: 1.8;
+  font-size: 25px;
   color: #333;
-  text-align: justify;
+  line-height: 1.6;
 }
 
 .hero-3 .button {
@@ -300,27 +296,22 @@ footer {
   background-color: #002f5c;
 }
 
-.hero-3 img {
-  width: 200px; /* adjust as needed */
-  height: 200px;
-  border-radius: 50%; /* makes image circular */
-  object-fit: cover; /* keeps image nicely cropped */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* optional for elegance */
+.hero-3 image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5px;  
 }
 
 
 .hero-3-image img {
-  max-width: 400px;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+   width: 350px;           /* smaller width */
+  height: 350px;          /* smaller height */
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #004b8d;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
-
-
-
-
-
 
 
 
