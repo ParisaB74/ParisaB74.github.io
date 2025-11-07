@@ -321,7 +321,7 @@ footer {
 
 .contact-section {
   padding: 60px 10%;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
 }
 
 .contact-container {
@@ -626,6 +626,7 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+
 
 
 
