@@ -100,9 +100,27 @@
 <footer>
   <p>© 2025 Secure Grants Pro. All rights reserved.</p>
 </footer>
+<script>
+  // Check if there's a hash in the URL (like #report)
+  window.addEventListener('load', () => {
+    const hash = window.location.hash;
+    if (hash) {
+      const targetCard = document.querySelector(hash);
+      if (targetCard && targetCard.classList.contains('service-card')) {
+        // Add highlight
+        targetCard.classList.add('highlight');
+        // Remove highlight after a few seconds
+        setTimeout(() => {
+          targetCard.classList.remove('highlight');
+        }, 4000);
+      }
+    }
+  });
+</script>
 
 </body>
 </html>
+
 
 
 
