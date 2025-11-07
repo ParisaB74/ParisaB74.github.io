@@ -551,11 +551,13 @@ footer {
 
 
 /* Dropdown menu */
+/* Dropdown container */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
+/* Hidden by default */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -566,38 +568,26 @@ footer {
   z-index: 1000;
 }
 
+/* Show menu only when hovering over .dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Link styling inside dropdown */
 .dropdown-content a {
   color: #004b8d;
   padding: 10px 16px;
   text-decoration: none;
   display: block;
-  font-weight: normal;
 }
 
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
 
-/* Show menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Keep “Services” button styling consistent */
+/* “Services” button itself */
 .dropbtn {
   cursor: pointer;
   font-weight: bold;
   padding: 8px 12px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
