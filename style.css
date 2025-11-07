@@ -60,6 +60,9 @@ nav ul li a {
   font-size: 18px; /* ← increase this value */
 
 }
+.dropdown-content a {
+  font-weight: normal;  /* makes dropdown text regular */
+}
 
 nav ul li a.active,
 nav ul li a:hover {
@@ -622,6 +625,7 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+
 
 
 
