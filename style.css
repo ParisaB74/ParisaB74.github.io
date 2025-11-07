@@ -516,21 +516,21 @@ footer {
 
 /* Services Grid */
 .services-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 40px; /* space between boxes */
+  justify-items: center;
   padding: 60px 10%;
   background-color: #ffffff;
 }
-
 .service-card {
-  background-color: #fafafa;
+background-color: #fafafa;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
   text-align: center;
-  width: 280px;
+  width: 100%;
+  max-width: 300px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -562,11 +562,13 @@ footer {
 /* Responsive */
 @media (max-width: 900px) {
   .services-grid {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
   }
-  .service-card {
-    width: 90%;
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* 1 per row on phones */
   }
 }
 
