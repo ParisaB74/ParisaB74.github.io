@@ -57,6 +57,7 @@ nav ul li a {
   padding: 8px 12px;
   border-radius: 4px;
   font-weight: bold;
+  font-size: 18px; /* ← increase this value */
 }
 
 nav ul li a.active,
@@ -591,3 +592,4 @@ footer {
   font-weight: bold;
   padding: 8px 12px;
 }
+
