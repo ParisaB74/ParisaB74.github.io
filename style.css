@@ -619,8 +619,9 @@ footer {
   background: linear-gradient(to right, #eaf3ff, #fff5eb);
 }
 
-
-
+html {
+  scroll-behavior: smooth;
+}
 
 
 
