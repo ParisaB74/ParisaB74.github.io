@@ -58,6 +58,8 @@ nav ul li a {
   border-radius: 4px;
   font-weight: bold;
   font-size: 18px; /* ← increase this value */
+  outline: 2px solid #ffd7a8; /* or your warm peach color */
+  outline-offset: 4px;
 }
 
 nav ul li a.active,
@@ -617,6 +619,7 @@ footer {
 .contact-hero {
   background: linear-gradient(to right, #eaf3ff, #ffe2c4);
 }
+
 
 
 
