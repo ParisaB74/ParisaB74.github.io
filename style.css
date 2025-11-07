@@ -81,7 +81,7 @@ footer {
 .hero {
   background: linear-gradient(to right, #eaf3ff, #fff5eb);
   text-align: center;
-  padding: 120px 20px 120px; /* taller top and bottom padding */
+  padding: 100px 20px 100px; /* taller top and bottom padding */
   width: 100%;             /* full width */
   box-sizing: border-box;   /* ensures padding doesn't add extra width */
   margin: 0 auto;
@@ -89,7 +89,7 @@ footer {
 }
 
 .hero h1 {
-  font-size: 32px; /* large font for slogan */
+  font-size: 42px; /* large font for slogan */
   font-weight: 700;
   color: #004b8d; /* dark blue color */
   margin: 0;
@@ -609,6 +609,7 @@ footer {
   box-shadow: 0 0 15px rgba(0, 75, 141, 0.3);
   transition: background-color 0.6s ease, box-shadow 0.6s ease;
 }
+
 
 
 
