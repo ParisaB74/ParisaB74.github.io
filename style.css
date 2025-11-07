@@ -473,11 +473,9 @@ footer {
   color: #333;
 }
 
-
-/* Services Hero */
 /* Services Hero */
 .services-hero {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   text-align: center;
   padding: 60px 20px 40px;
 }
@@ -502,11 +500,11 @@ footer {
   justify-content: center;
   gap: 40px;
   padding: 60px 10%;
-  background-color: #ffffff;
+  background-color: #f5f5f5;
 }
 
 .service-card {
-  background-color: #fafafa;
+  background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -550,6 +548,7 @@ footer {
     width: 90%;
   }
 }
+
 
 
 
