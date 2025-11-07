@@ -63,7 +63,7 @@ nav ul li a {
 
 nav ul li a.active,
 nav ul li a:hover {
-  background-color: #e0e0e0; /* light grey hover */
+  background-color: #fff5eb; /* light grey hover */
 }
 
 main {
@@ -618,6 +618,7 @@ footer {
 .contact-hero {
   background: linear-gradient(to right, #eaf3ff, #ffe2c4);
 }
+
 
 
 
