@@ -603,3 +603,10 @@ footer {
   display: block;
 }
 
+/* Highlighted service card */
+.service-card.highlight {
+  background-color: #e6f0ff; /* light blue highlight */
+  box-shadow: 0 0 15px rgba(0, 75, 141, 0.3);
+  transition: background-color 0.6s ease, box-shadow 0.6s ease;
+}
+
