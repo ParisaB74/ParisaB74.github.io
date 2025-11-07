@@ -629,15 +629,16 @@ html {
 }
 
 /* Decorative dots on right edge */
+/* Decorative dots on right edge (4 columns x 6 rows) */
 .decorative-dots {
   position: fixed;
-  top: 50%;
-  right: 30px; /* adjust distance from edge */
-  transform: translateY(-50%);
+  bottom: 33%; /* roughly 1/3 from the bottom */
+  right: 30px; /* adjust distance from right edge */
   display: grid;
-  grid-template-columns: repeat(2, 10px);
-  grid-template-rows: repeat(6, 10px);
+  grid-template-columns: repeat(4, 10px); /* now 4 columns */
+  grid-template-rows: repeat(6, 10px); /* still 6 rows */
   gap: 12px;
+  transform: translateY(50%); /* slight vertical alignment tweak */
   z-index: 0;
 }
 
@@ -657,6 +658,14 @@ html {
 
 
 
+
+@keyframes drift {
+  0% { transform: translateY(50%) translateX(0); }
+  100% { transform: translateY(50%) translateX(8px); }
+}
+.decorative-dots {
+  animation: drift 8s ease-in-out infinite alternate;
+}
 
 
 
