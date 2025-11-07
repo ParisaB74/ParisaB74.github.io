@@ -523,7 +523,6 @@ footer {
   width: 90px;
   height: 90px;
   object-fit: contain;
-  margin-bottom: 20px;
 }
 
 .service-card h2 {
@@ -558,6 +557,7 @@ footer {
   gap: 40px;
   padding: 60px 6%;
 }
+
 
 
 
