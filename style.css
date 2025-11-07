@@ -391,8 +391,6 @@ footer {
 }
 
 
-
-
 /* How It Works Hero */
 .how-it-works-hero {
   background-color: #f5f5f5;
@@ -441,6 +439,7 @@ footer {
   color: #004b8d;
   margin-bottom: 10px;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .how-it-works-steps .step p {
@@ -457,6 +456,7 @@ footer {
     gap: 30px;
   }
 }
+
 
 
 
