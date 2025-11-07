@@ -455,7 +455,23 @@ footer {
 }
 
 
+/* Contact Hero */
+.contact-hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+}
 
+.contact-hero h1 {
+  font-size: 48px;
+  color: #004b8d;
+  margin-bottom: 15px;
+}
+
+.contact-hero p {
+  font-size: 20px;
+  color: #333;
+}
 
 
 
