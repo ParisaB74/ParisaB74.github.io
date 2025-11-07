@@ -314,68 +314,21 @@ footer {
 }
 
 
-/* Contact Hero */
-.contact-hero {
-  text-align: center;
-  padding: 60px 20px;
-  background-color: #f5f5f5;
+.contact-section {
+  padding: 60px 10%;
+  background-color: #f9f9f9;
 }
 
-.contact-hero h1 {
-  font-size: 48px;
-  color: #004b8d;
-  margin-bottom: 15px;
+.contact-container {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap; /* for mobile responsiveness */
 }
 
-.contact-hero p {
-  font-size: 20px;
-  color: #333;
-}
-
-/* Contact Form */
-.contact-form-section {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-.contact-form label {
-  display: block;
-  margin-top: 20px;
-  font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.contact-form button {
-  margin-top: 20px;
-  padding: 15px 30px;
-  font-size: 18px;
-  background-color: #004b8d;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.contact-form button:hover {
-  background-color: #002f5c;
-}
-
-/* Contact Info */
 .contact-info {
-  text-align: center;
-  margin: 60px 20px;
+  flex: 1;
+  min-width: 280px; /* prevents it from being too small on mobile */
+  color: #333;
 }
 
 .contact-info h2 {
@@ -386,8 +339,52 @@ footer {
 
 .contact-info p {
   font-size: 18px;
-  color: #333;
-  margin: 5px 0;
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 16px;
+  background-color: #004b8d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #002f5c;
 }
 
 
@@ -456,6 +453,7 @@ footer {
     gap: 30px;
   }
 }
+
 
 
 
