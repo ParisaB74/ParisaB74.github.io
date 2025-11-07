@@ -593,3 +593,13 @@ footer {
   padding: 8px 12px;
 }
 
+/* Hide dropdown unless hovered or opened (mobile) */
+.dropdown-content {
+  display: none;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown.open .dropdown-content {
+  display: block;
+}
+
