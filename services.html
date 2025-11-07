@@ -101,25 +101,34 @@
   <p>© 2025 Secure Grants Pro. All rights reserved.</p>
 </footer>
 <script>
-  // Check if there's a hash in the URL (like #report)
-  window.addEventListener('load', () => {
+  // Function to highlight the target card
+  function highlightCard() {
     const hash = window.location.hash;
+    // Remove highlight from all cards first
+    document.querySelectorAll('.service-card').forEach(card => {
+      card.classList.remove('highlight');
+    });
+    // Highlight the one matching the hash
     if (hash) {
       const targetCard = document.querySelector(hash);
       if (targetCard && targetCard.classList.contains('service-card')) {
-        // Add highlight
         targetCard.classList.add('highlight');
-        // Remove highlight after a few seconds
-        setTimeout(() => {
-          targetCard.classList.remove('highlight');
-        }, 4000);
+        // Optional: remove highlight after a few seconds
+        setTimeout(() => targetCard.classList.remove('highlight'), 4000);
       }
     }
-  });
+  }
+
+  // Run when page first loads
+  window.addEventListener('load', highlightCard);
+
+  // Run again whenever the hash changes (like when clicking within same page)
+  window.addEventListener('hashchange', highlightCard);
 </script>
 
 </body>
 </html>
+
 
 
 
