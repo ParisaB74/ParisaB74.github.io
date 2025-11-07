@@ -6,6 +6,27 @@
   <title>Contact – Grant Services</title>
   <link rel="stylesheet" href="style.css">
 </head>
+  <script>
+  // Close dropdown when any link inside it is clicked
+  document.querySelectorAll('.dropdown-content a').forEach(link => {
+    link.addEventListener('click', () => {
+      const dropdown = link.closest('.dropdown');
+      if (dropdown) {
+        dropdown.classList.remove('open');
+      }
+    });
+  });
+
+  // Optional: toggle dropdown open/close on click (for mobile)
+  document.querySelectorAll('.dropbtn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault(); // prevent page reload if needed
+      const parent = btn.parentElement;
+      parent.classList.toggle('open');
+    });
+  });
+</script>
+
 <body>
   <header>
      <div class="logo">
@@ -75,6 +96,7 @@
 </body>
 
 </html>
+
 
 
 
