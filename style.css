@@ -431,10 +431,9 @@ footer {
 }
 
 .how-it-works-steps .step img {
-  width: 120px;    /* increase size — e.g., 120px or more */
-  height: 120px;   /* same value to keep square or adjust as needed */
-  object-fit: contain; /* keeps image aspect ratio intact */
-  margin-bottom: 20px; /* spacing below the image */
+  max-width: 150px;
+  width: 100%;
+  height: auto;
 }
 
 .how-it-works-steps .step h2 {
@@ -458,6 +457,7 @@ footer {
     gap: 30px;
   }
 }
+
 
 
 
