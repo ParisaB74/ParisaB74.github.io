@@ -89,7 +89,7 @@ footer {
 }
 
 .hero h1 {
-  font-size: 48px; /* large font for slogan */
+  font-size: 32px; /* large font for slogan */
   font-weight: 700;
   color: #004b8d; /* dark blue color */
   margin: 0;
@@ -397,7 +397,7 @@ footer {
 }
 
 .how-it-works-hero h1 {
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 700;
   color: #004b8d;
   margin-bottom: 15px;
@@ -464,7 +464,7 @@ footer {
 }
 
 .contact-hero h1 {
-  font-size: 48px;
+  font-size: 32px;
   color: #004b8d;
   margin-bottom: 15px;
 }
@@ -482,7 +482,7 @@ footer {
 }
 
 .services-hero h1 {
-  font-size: 48px;
+  font-size: 32px;
   color: #004b8d;
   font-weight: 700;
   margin-bottom: 15px;
@@ -609,4 +609,5 @@ footer {
   box-shadow: 0 0 15px rgba(0, 75, 141, 0.3);
   transition: background-color 0.6s ease, box-shadow 0.6s ease;
 }
+
 
