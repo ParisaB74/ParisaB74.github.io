@@ -615,8 +615,9 @@ footer {
 .about-hero,
 .how-hero,
 .contact-hero {
-  background: linear-gradient(to right, #eaf3ff, ##ffe2c4);
+  background: linear-gradient(to right, #eaf3ff, #ffe2c4);
 }
+
 
 
 
