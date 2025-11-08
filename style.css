@@ -710,19 +710,18 @@ html {
 .hero h1::before {
   content: "";
   position: absolute;
-  left: -55px;             /* moves it rightward, away from text */
+  left: -30px;             /* moves the circle closer to the text */
   top: 50%;
   transform: translateY(-50%) rotate(-45deg); /* opens arc at top-right */
-  width: 70px;             /* bigger circle */
+  width: 70px;             /* circle size */
   height: 70px;
   border-radius: 50%;
   border: 6px solid #cfcfcf;  /* light gray */
-  border-left-color: transparent;  /* hide top-right area */
+  border-left-color: transparent;
   border-top-color: transparent;
   opacity: 0.8;
   pointer-events: none;
   z-index: 0;
 }
 
-}
 
