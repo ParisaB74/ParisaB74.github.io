@@ -668,6 +668,21 @@ html {
   opacity: 0.85;
 }
 
+/* Bottom-left logo on contact page */
+.contact-logo {
+  position: fixed;
+  bottom: 20px;      /* distance from the bottom edge */
+  left: 30px;        /* distance from the left edge */
+  z-index: 1000;
+  opacity: 0.9;      /* slight transparency */
+}
+
+.contact-logo img {
+  width: 120px;      /* adjust size as needed */
+  height: auto;
+  border-radius: 8px; /* optional for smooth corners */
+}
+
 
 
 
