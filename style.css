@@ -8,18 +8,20 @@ body {
 
 /* Header */
 header {
-  position: fixed;       /* keeps toolbar visible */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: white;  /* keep toolbar white */
+  background-color: white;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: space-between; /* logo left, tabs right */
+  justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  transition: top 0.4s ease; /* smooth hide/show */
 }
+
 
 /* Add some padding below header for content not to be hidden */
 body {
