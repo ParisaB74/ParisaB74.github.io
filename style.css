@@ -654,7 +654,7 @@ html {
 .contact-hero::before {
   content: "";
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 310px; /* adjust horizontal position */
   width: 25px;   /* dot size */
   height: 25px;
@@ -667,6 +667,7 @@ html {
   z-index: 1;
   opacity: 0.85;
 }
+
 
 
 
