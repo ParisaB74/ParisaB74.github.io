@@ -645,8 +645,7 @@ html {
   }
 }
 
-
-/* Three angled dots beside hero text */
+/* Three angled dots beside hero text (flipped & larger) */
 .hero::before,
 .services-hero::before,
 .about-hero::before,
@@ -655,15 +654,15 @@ html {
   content: "";
   position: absolute;
   top: 50%;
-  left: 80px; /* adjust distance from text */
-  width: 8px;
-  height: 8px;
-  background-color: #004b8d;
+  left: 80px; /* distance from hero text */
+  width: 14px;   /* dot size — bigger now */
+  height: 14px;
+  background-color: #004b8d; /* your main blue color */
   border-radius: 50%;
   box-shadow:
-    12px 12px 0 #004b8d,
-    24px 24px 0 #004b8d; /* creates two more dots diagonally */
-  transform: rotate(-25deg) translateY(-50%); /* slight angle */
+    -14px 14px 0 #004b8d,
+    -28px 28px 0 #004b8d; /* flip horizontally by using negative X offsets */
+  transform: rotate(25deg) translateY(-50%); /* flipped diagonal */
   z-index: 1;
   opacity: 0.8;
 }
