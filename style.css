@@ -680,21 +680,3 @@ html {
   z-index: 0;
 }
 
-/* Decorative blob shape for all hero sections */
-.hero::before,
-.services-hero::before,
-.about-hero::before,
-.how-it-works-hero::before,
-.contact-hero::before {
-  content: "";
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  width: 100%;
-  height: 100%;
-  background-image: radial-gradient(#ffd7a850 1px, transparent 1px);
-  background-size: 25px 25px;
-  opacity: 0.4;
-  z-index: 0;
-}
-
