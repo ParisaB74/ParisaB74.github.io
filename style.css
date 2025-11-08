@@ -681,5 +681,59 @@ html {
   animation: floatCircle 6s ease-in-out infinite;
 }
 
+/* Decorative partial circle on the left side of each hero */
+.hero,
+.services-hero,
+.about-hero,
+.how-it-works-hero,
+.contact-hero {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Arc positioned to the left of hero text */
+.hero::before,
+.services-hero::before,
+.about-hero::before,
+.how-it-works-hero::before,
+.contact-hero::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -180px; /* pushes the arc partially off-screen */
+  width: 420px;
+  height: 420px;
+  border: 10px solid #ffd7a8; /* warm peach accent */
+  border-radius: 50%;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  opacity: 0.6;
+  transform: translateY(-50%) rotate(15deg);
+  z-index: 0;
+}
+
+/* Keep hero text and image above the decoration */
+.hero *,
+.services-hero *,
+.about-hero *,
+.how-it-works-hero *,
+.contact-hero * {
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 800px) {
+  .hero::before,
+  .services-hero::before,
+  .about-hero::before,
+  .how-it-works-hero::before,
+  .contact-hero::before {
+    width: 250px;
+    height: 250px;
+    left: -130px;
+    opacity: 0.3;
+  }
+}
+
 
 
