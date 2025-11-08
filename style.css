@@ -671,18 +671,24 @@ html {
 /* Bottom-left logo on contact page */
 .contact-logo {
   position: fixed;
-  bottom: 80px;      /* distance from the bottom edge */
-  left: 100px;        /* distance from the left edge */
+  bottom: 60px;
+  left: 120px;
   z-index: 1000;
-  opacity: 0.9;      /* slight transparency */
+  opacity: 0; /* hidden by default */
+  transition: opacity 0.5s ease;
+  pointer-events: none; /* ignore clicks when hidden */
 }
+
+.contact-logo.visible {
+  opacity: 0.9; /* visible when scrolled to bottom */
+}
+
 
 .contact-logo img {
   width: 120px;      /* adjust size as needed */
   height: auto;
   border-radius: 8px; /* optional for smooth corners */
 }
-
 
 
 .contact-logo {
@@ -693,6 +699,7 @@ html {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 0.9; transform: translateY(0); }
 }
+
 
 
 
