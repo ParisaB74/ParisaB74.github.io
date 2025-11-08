@@ -654,7 +654,7 @@ html {
 .contact-hero::before {
   content: "";
   position: absolute;
-  top: 15%;
+  top: 35%;
   left: 310px; /* adjust horizontal position */
   width: 25px;   /* dot size */
   height: 25px;
@@ -663,10 +663,11 @@ html {
   box-shadow:
     -45px 45px 0 #ffffff,   /* increased gap */
     -90px 90px 0 #ffffff;   /* second dot further apart */
-  transform: rotate(35deg) translateY(-50%);
+  transform: rotate(15deg) translateY(-50%);
   z-index: 1;
   opacity: 0.85;
 }
+
 
 
 
