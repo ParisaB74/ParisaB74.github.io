@@ -620,7 +620,7 @@ footer {
 .hero,
 .services-hero,
 .about-hero,
-.how-hero,
+.how-it-works-hero,
 .contact-hero {
   background: linear-gradient(to right, #eaf3ff, #fff5eb);
 }
@@ -706,6 +706,7 @@ html {
     opacity: 0.3;
   }
 }
+
 
 
 
