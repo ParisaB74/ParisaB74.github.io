@@ -652,7 +652,7 @@ html {
 .how-it-works-hero h1::before,
 .contact-hero h1::before {
   content: "";
-  position: absolute;
+  position: fixed;
   left: -110px; /* moved more to the left */
   top: 50%;
   transform: translateY(-50%) rotate(-55deg); /* softer open angle */
@@ -671,10 +671,11 @@ html {
 .about-hero h1,
 .how-it-works-hero h1,
 .contact-hero h1 {
-  position: relative;
+  position: fixed;
   display: inline-block; /* allows ::before circle to align with text */
   z-index: 1;
 }
+
 
 
 
