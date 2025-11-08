@@ -646,6 +646,7 @@ html {
 }
 
 /* Three angled dots beside hero text (flipped & larger) */
+/* Three angled dots beside hero text (larger + more spacing) */
 .hero::before,
 .services-hero::before,
 .about-hero::before,
@@ -654,15 +655,15 @@ html {
   content: "";
   position: absolute;
   top: 50%;
-  left: 80px; /* distance from hero text */
-  width: 14px;   /* dot size — bigger now */
-  height: 14px;
-  background-color: #004b8d; /* your main blue color */
+  left: 80px; /* adjust horizontal position */
+  width: 18px;   /* dot size */
+  height: 18px;
+  background-color: #004b8d; /* your main blue */
   border-radius: 50%;
   box-shadow:
-    -14px 14px 0 #004b8d,
-    -28px 28px 0 #004b8d; /* flip horizontally by using negative X offsets */
-  transform: rotate(25deg) translateY(-50%); /* flipped diagonal */
+    -25px 25px 0 #004b8d,  /* 1st extra dot */
+    -50px 50px 0 #004b8d;  /* 2nd extra dot — increased gap */
+  transform: rotate(25deg) translateY(-50%);
   z-index: 1;
-  opacity: 0.8;
+  opacity: 0.85;
 }
