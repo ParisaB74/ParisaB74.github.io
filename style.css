@@ -707,24 +707,22 @@ html {
   }
 }
 
-.hero h1 {
-  position: relative;
-  display: inline-block; /* keeps decoration next to text */
-}
-
 .hero h1::before {
   content: "";
   position: absolute;
-  left: -25px;           /* closer to text */
+  left: -55px;             /* moves it rightward, away from text */
   top: 50%;
-  transform: translateY(-50%) rotate(25deg);
-  width: 40px;           /* smaller circle */
-  height: 40px;
+  transform: translateY(-50%) rotate(-45deg); /* opens arc at top-right */
+  width: 70px;             /* bigger circle */
+  height: 70px;
   border-radius: 50%;
-  border: 5px solid #cfcfcf;  /* gray partial circle */
-  border-right-color: transparent;
-  border-bottom-color: transparent;
+  border: 6px solid #cfcfcf;  /* light gray */
+  border-left-color: transparent;  /* hide top-right area */
+  border-top-color: transparent;
   opacity: 0.8;
   pointer-events: none;
   z-index: 0;
 }
+
+}
+
