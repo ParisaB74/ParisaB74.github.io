@@ -80,6 +80,21 @@ footer {
   margin: 40px 0;
   color: #777;
 }
+.hero,
+.services-hero,
+.about-hero,
+.how-it-works-hero,
+.contact-hero {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  min-height: 300px;        /* ensures the arc has space */
+  background-color: #fff5eb; /* warm contrast background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
 /* Hero section styling */
 .hero {
@@ -734,6 +749,7 @@ html {
     opacity: 0.3;
   }
 }
+
 
 
 
