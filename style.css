@@ -654,19 +654,20 @@ html {
 .contact-hero::before {
   content: "";
   position: absolute;
-  top: 45%;
-  left: 290px; /* adjust horizontal position */
+  top: 35%;
+  left: 310px; /* adjust horizontal position */
   width: 23px;   /* dot size */
   height: 23px;
   background-color: #ffffff; /* your main blue */
   border-radius: 50%;
   box-shadow:
-    -35px 35px 0 #004b8d,   /* increased gap */
-    -70px 70px 0 #004b8d;   /* second dot further apart */
+    -35px 35px 0 #ffffff,   /* increased gap */
+    -70px 70px 0 #ffffff;   /* second dot further apart */
   transform: rotate(25deg) translateY(-50%);
   z-index: 1;
   opacity: 0.85;
 }
+
 
 
 
