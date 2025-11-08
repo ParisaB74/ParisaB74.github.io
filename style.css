@@ -645,7 +645,8 @@ html {
   }
 }
 
-/* Partial white circle beside slogan text (for all hero sections) */
+
+/* Three angled dots beside hero text */
 .hero::before,
 .services-hero::before,
 .about-hero::before,
@@ -653,35 +654,16 @@ html {
 .contact-hero::before {
   content: "";
   position: absolute;
-  top: 50px;       /* distance from top of the hero */
-  left: 80px;      /* distance from left edge */
-  width: 150px;    /* circle size */
-  height: 150px;
+  top: 50%;
+  left: 80px; /* adjust distance from text */
+  width: 8px;
+  height: 8px;
+  background-color: #004b8d;
   border-radius: 50%;
-  border: 6px solid rgba(255, 255, 255, 0.85);
-  border-right-color: transparent;
-  border-top-color: transparent;
-  transform: rotate(-40deg);
-  opacity: 0.9;
-  z-index: 0;
+  box-shadow:
+    12px 12px 0 #004b8d,
+    24px 24px 0 #004b8d; /* creates two more dots diagonally */
+  transform: rotate(-25deg) translateY(-50%); /* slight angle */
+  z-index: 1;
+  opacity: 0.8;
 }
-
-
-.hero h1,
-.services-hero h1,
-.about-hero h1,
-.how-it-works-hero h1,
-.contact-hero h1 {
-  position: relative;
-  overflow: hidden;
-}
-
-
-
-
-
-
-
-
-
-
