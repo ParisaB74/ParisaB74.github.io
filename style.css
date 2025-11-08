@@ -655,7 +655,7 @@ html {
   content: "";
   position: absolute;
   top: 35%;
-  left: 180px; /* adjust horizontal position */
+  left: 250px; /* adjust horizontal position */
   width: 18px;   /* dot size */
   height: 18px;
   background-color: #004b8d; /* your main blue */
@@ -667,5 +667,6 @@ html {
   z-index: 1;
   opacity: 0.85;
 }
+
 
 
