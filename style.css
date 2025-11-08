@@ -671,10 +671,11 @@ html {
 .about-hero h1,
 .how-it-works-hero h1,
 .contact-hero h1 {
-  position: fixed;
+  position: relative;
   display: inline-block; /* allows ::before circle to align with text */
   z-index: 1;
 }
+
 
 
 
