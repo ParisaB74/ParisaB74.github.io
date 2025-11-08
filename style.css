@@ -655,7 +655,7 @@ html {
   position: absolute;
   left: -90px; /* moved more to the left */
   top: 50%;
-  transform: translateY(-50%) rotate(-25deg); /* softer open angle */
+  transform: translateY(-50%) rotate(-45deg); /* softer open angle */
   width: 150px;  /* larger size */
   height: 150px;
   border-radius: 50%;
@@ -675,6 +675,7 @@ html {
   display: inline-block; /* allows ::before circle to align with text */
   z-index: 1;
 }
+
 
 
 
