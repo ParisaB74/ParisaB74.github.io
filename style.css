@@ -680,3 +680,27 @@ html {
   z-index: 0;
 }
 
+/* Decorative circle on right edge of Services tab */
+.services-decoration {
+  position: fixed;
+  right: 0;
+  bottom: 25%; /* aligns visually with the last grid row */
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 60%, #ffd7a8 40%, #fff5eb 100%);
+  opacity: 0.5;
+  z-index: 0; /* behind content */
+}
+
+/* Optional subtle animation (looks professional) */
+@keyframes floatCircle {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.services-decoration {
+  animation: floatCircle 6s ease-in-out infinite;
+}
+
