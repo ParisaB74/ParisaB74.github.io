@@ -682,3 +682,45 @@ html {
 }
 
 
+
+/* Decorative partial circle (arc) for all hero sections */
+.hero,
+.services-hero,
+.about-hero,
+.how-it-works-hero,
+.contact-hero {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* The arc shape */
+.hero::after,
+.services-hero::after,
+.about-hero::after,
+.how-it-works-hero::after,
+.contact-hero::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -150px; /* Push slightly off-screen */
+  width: 400px;
+  height: 400px;
+  border: 10px solid #ffd7a8; /* warm peach color for the arc */
+  border-radius: 50%;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  opacity: 0.6;
+  transform: translateY(-50%) rotate(15deg);
+  z-index: 0;
+}
+
+/* Make sure text/images stay above */
+.hero *,
+.services-hero *,
+.about-hero *,
+.how-it-works-hero *,
+.contact-hero * {
+  position: relative;
+  z-index: 2;
+}
