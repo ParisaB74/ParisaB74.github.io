@@ -685,7 +685,7 @@ html {
 
 
 .contact-logo img {
-  width: 120px;      /* adjust size as needed */
+  width: 180px;      /* adjust size as needed */
   height: auto;
   border-radius: 8px; /* optional for smooth corners */
 }
@@ -699,6 +699,7 @@ html {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 0.9; transform: translateY(0); }
 }
+
 
 
 
