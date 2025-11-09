@@ -112,22 +112,21 @@ window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
   const pageHeight = document.body.scrollHeight - window.innerHeight;
 
-  // Only show when within 80px of bottom
-  if (scrollY >= pageHeight - 80) {
-    if (!logo.classList.contains("visible")) {
-      logo.classList.add("visible");
-    }
+  // Show only when user reaches bottom
+  if (scrollY >= pageHeight - 50) {
+    logo.classList.add("visible");
   } else {
-    // Instantly hide when going up
-    logo.classList.remove("visible");
+    logo.classList.remove("visible"); // instantly hides when scrolling up
   }
 });
 </script>
+
 <img src="logo.png" alt="Logo" class="contact-logo">
 
 </body>
 
 </html>
+
 
 
 
