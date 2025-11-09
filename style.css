@@ -880,6 +880,17 @@ html {
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
+/* Hover pop effect for step images */
+.how-it-works-steps .step img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 50%;
+}
+
+.how-it-works-steps .step img:hover {
+  transform: scale(1.07) translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
 
 
 
