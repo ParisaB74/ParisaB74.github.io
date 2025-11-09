@@ -678,10 +678,11 @@ html {
 .contact-logo {
   position: absolute;
   bottom: 0;
-  left: 25px;
-  width: 60px;
+ left: 25px;
+  width: 120px;  /* increased from 60px */
   height: auto;
 }
+
 
 
 
