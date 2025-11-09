@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
+  position: relative;
 }
 
 /* Header */
@@ -677,3 +678,4 @@ html {
   height: auto;
   z-index: 5;
 }
+
