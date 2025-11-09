@@ -669,15 +669,18 @@ html {
 }
 
 /* Bottom-left logo on contact page */
-.contact-logo {
-  position: absolute;
-  bottom: 0;   /* moves it closer to the bottom edge */
-  left: 25px;     /* moves it closer to the left edge */
-  width: 70px;    /* smaller size */
-  height: auto;
-  z-index: 5;
+.contact-page {
+  position: relative; /* only affects this page */
 }
 
+.contact-page .contact-logo {
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  width: 60px;
+  height: auto;
+  z-index: 10;
+}
 
 
 
