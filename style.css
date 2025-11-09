@@ -395,87 +395,6 @@ footer {
   background-color: #002f5c;
 }
 
-/* About Hero */
-
-.about-hero {
-  background-color: #f5f5f5;
-  text-align: center;
-  padding: 60px 20px 40px;
-}
-
-.about-hero h1 {
-  font-size: 42px;
-  font-weight: 700;
-  color: #004b8d;
-  margin-bottom: 15px;
-}
-
-.about-hero p {
-  font-size: 20px;
-  color: #333;
-  line-height: 1.6;
-}
-
-.about-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.about-text {
-  flex: 1;
-  max-width: 55%;
-  color: #333;
-}
-
-
-
-.about-text h2 {
-  font-size: 24px;
-  color: #004b8d;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-
-
-.about-text ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  line-height: 1.8;
-}
-
-.about-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.about-image img {
-  width: 350px;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 6px solid #004b8d;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .about-text {
-    max-width: 100%;
-  }
-  .about-image img {
-    width: 300px;
-    height: 300px;
-  }
-}
 
 
 
@@ -768,64 +687,129 @@ html {
 
 
 /* About page layout improvements */
+/* ---- About Us Styling ---- */
+.about-hero {
+  text-align: center;
+  padding: 100px 20px 80px;
+  background: linear-gradient(120deg, #eaf3ff, #fff5eb);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #004b8d;
+  margin-bottom: 15px;
+}
+
+.about-hero p {
+  font-size: 22px;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Floating subtle circle design */
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: -120px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle at center, rgba(0, 75, 141, 0.05), transparent 70%);
+  border-radius: 50%;
+}
+
 .about-section {
+  padding: 80px 10%;
   background-color: #ffffff;
-  padding: 80px 10%; /* adds space on left and right */
-  box-sizing: border-box;
 }
 
 .about-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: flex-start;
-  gap: 50px;
+  justify-content: space-between;
+  gap: 60px;
 }
 
 .about-text {
   flex: 1 1 55%;
   text-align: justify;
-  line-height: 1.8;
 }
 
 .about-text h2 {
-  color: #004b8d;
   font-size: 26px;
-  margin-top: 30px;
+  color: #004b8d;
+  margin-top: 40px;
   margin-bottom: 10px;
+  position: relative;
 }
 
-.about-text p,
-.about-text ul {
+.about-text h2::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 12px;
+  width: 6px;
+  height: 20px;
+  background-color: #004b8d;
+  border-radius: 3px;
+}
+
+.about-text p {
   font-size: 18px;
   color: #333;
+  line-height: 1.8;
 }
 
-.about-text ul {
+/* Values card */
+.values-card {
+  background: #f9fbff;
+  border-left: 6px solid #004b8d;
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.values-card ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
 }
 
-.about-text li {
-  margin-bottom: 8px;
+.values-card li {
+  margin-bottom: 10px;
+  font-size: 17px;
 }
 
+/* About image */
 .about-image {
   flex: 1 1 35%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .about-image img {
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  object-fit: cover;
   border: 6px solid #004b8d;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
-/* Responsive view for smaller screens */
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive design */
 @media (max-width: 900px) {
   .about-container {
     flex-direction: column;
@@ -838,11 +822,11 @@ html {
     height: 280px;
   }
 
-  .about-text {
-    flex: 1 1 100%;
-    text-align: center;
+  .about-text h2::before {
+    display: none;
   }
 }
+
 
 
 
