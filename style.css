@@ -680,7 +680,7 @@ html {
 .contact-logo {
   position: absolute;
   bottom: 95px;
-  left: 45px;
+  left: 65px;
   width: 300px;  /* increased from 60px */
   height: auto;
 }
@@ -826,6 +826,7 @@ html {
     display: none;
   }
 }
+
 
 
 
