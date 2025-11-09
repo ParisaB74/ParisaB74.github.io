@@ -693,8 +693,8 @@ html {
 
 .contact-logo {
   position: absolute;
-  bottom: 105px;
-  left: 105px;
+  bottom: 115px;
+  left: 125px;
   width: 300px;  /* increased from 60px */
   height: auto;
 }
@@ -890,6 +890,7 @@ html {
   transform: scale(1.07) translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
+
 
 
 
