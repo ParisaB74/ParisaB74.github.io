@@ -100,19 +100,25 @@
 <footer>
   <p>© 2023 Secure Grants Pro. All rights reserved.</p>
 </footer>
-<script src="script.js"></script>
-  <script>
-const items = document.querySelectorAll('.fade-in');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('visible');
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('.how-it-works-steps .step').forEach(step => {
+    step.classList.add('fade-in');
+    observer.observe(step);
   });
-});
-items.forEach(item => observer.observe(item));
 </script>
 
 </body>
 </html>
+
 
 
 
