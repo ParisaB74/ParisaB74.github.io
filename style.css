@@ -669,38 +669,27 @@ html {
 }
 
 /* Bottom-left logo on contact page */
-.contact-logo {
-  position: fixed;
-  bottom: 25px;       /* fixed at the bottom */
-  left: 25px;         /* fixed at the left */
-  width: 100px;       /* adjust size */
+footer {
+  background-color: #ffffff;
+  padding: 30px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #e0e0e0;
+}
+
+.footer-logo {
+  width: 100px;
   height: auto;
-  opacity: 0;
-  transition: opacity 0.15s ease-in-out; /* fast fade */
-  pointer-events: none;  /* prevents blocking other elements */
-  z-index: 999;
 }
 
-.contact-logo.visible {
-  opacity: 1;
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
-
-.contact-logo img {
-  width: 180px;      /* adjust size as needed */
-  height: auto;
-  border-radius: 8px; /* optional for smooth corners */
-}
-
-
-.contact-logo {
-  animation: fadeInLogo 1s ease-in;
-}
-
-@keyframes fadeInLogo {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 0.9; transform: translateY(0); }
-}
 
 
 
