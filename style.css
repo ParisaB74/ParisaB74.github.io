@@ -679,3 +679,7 @@ html {
   z-index: 5;
 }
 
+
+footer {
+  border-top: none; /* remove line */
+}
