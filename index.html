@@ -122,8 +122,19 @@
   <p>© 2023 Secure Grants Pro. All rights reserved.</p>
 </footer>
 <script src="script.js"></script>
+  <script>
+const items = document.querySelectorAll('.fade-in');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+});
+items.forEach(item => observer.observe(item));
+</script>
+
 </body>
 </html>
+
 
 
 
