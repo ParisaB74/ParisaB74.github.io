@@ -677,11 +677,12 @@ html {
 
 .contact-logo {
   position: absolute;
-  bottom: 5px;
- left: 45px;
-  width: 250px;  /* increased from 60px */
+  bottom: 25px;
+ left: 65px;
+  width: 350px;  /* increased from 60px */
   height: auto;
 }
+
 
 
 
