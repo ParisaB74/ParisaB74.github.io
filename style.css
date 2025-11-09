@@ -690,7 +690,7 @@ html {
 /* ---- About Us Styling ---- */
 .about-hero {
   text-align: center;
-  padding: 100px 20px 80px;
+  padding: 60px 20px 60px;
   background: linear-gradient(120deg, #eaf3ff, #fff5eb);
   position: relative;
   overflow: hidden;
@@ -826,6 +826,7 @@ html {
     display: none;
   }
 }
+
 
 
 
