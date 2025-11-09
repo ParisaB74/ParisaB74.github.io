@@ -674,14 +674,16 @@ html {
   bottom: 60px;
   left: 120px;
   z-index: 1000;
-  opacity: 0; /* hidden by default */
-  transition: opacity 0.5s ease;
-  pointer-events: none; /* ignore clicks when hidden */
+  opacity: 0;
+  transition: opacity 0.15s ease-out; /* faster fade */
+  pointer-events: none;
 }
 
 .contact-logo.visible {
-  opacity: 0.9; /* visible when scrolled to bottom */
+  opacity: 0.9;
+  transition: opacity 0.3s ease-in; /* smoother fade-in */
 }
+
 
 
 .contact-logo img {
@@ -699,6 +701,7 @@ html {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 0.9; transform: translateY(0); }
 }
+
 
 
 
