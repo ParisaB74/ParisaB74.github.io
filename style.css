@@ -671,15 +671,15 @@ html {
 /* Bottom-left logo on contact page */
 .contact-logo {
   position: absolute;
-  bottom: 40px; /* inside page, above footer */
-  left: 40px;
-  width: 100px;
+  bottom: 15px;   /* moves it closer to the bottom edge */
+  left: 15px;     /* moves it closer to the left edge */
+  width: 70px;    /* smaller size */
   height: auto;
   z-index: 5;
 }
 
-
 footer {
   border-top: none; /* remove line */
 }
+
 
