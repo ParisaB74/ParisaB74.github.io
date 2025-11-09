@@ -396,10 +396,33 @@ footer {
 }
 
 /* About Hero */
+
 .about-hero {
-  background-color: #ffffff;
-  padding: 60px 5%;
+  text-align: center;
+  padding: 100px 20px 100px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
+
+.about-hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #004b8d;
+  margin-bottom: 15px;
+}
+
+.about-hero p {
+  font-size: 20px;
+  color: #333;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 
 .about-container {
   display: flex;
@@ -415,12 +438,7 @@ footer {
   color: #333;
 }
 
-.about-text h1 {
-  font-size: 42px;
-  color: #004b8d;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
+
 
 .about-text h2 {
   font-size: 24px;
@@ -429,11 +447,7 @@ footer {
   margin-bottom: 10px;
 }
 
-.about-text p {
-  font-size: 18px;
-  line-height: 1.7;
-  margin-bottom: 15px;
-}
+
 
 .about-text ul {
   list-style-type: disc;
@@ -769,5 +783,6 @@ html {
   width: 350px;  /* increased from 60px */
   height: auto;
 }
+
 
 
