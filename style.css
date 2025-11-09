@@ -669,36 +669,11 @@ html {
 }
 
 /* Bottom-left logo on contact page */
-footer {
-  background-color: #ffffff;
-  padding: 30px 5%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 2px solid #e0e0e0;
-}
-
-.footer-logo {
+.contact-logo {
+  position: absolute;
+  bottom: 40px; /* inside page, above footer */
+  left: 40px;
   width: 100px;
   height: auto;
+  z-index: 5;
 }
-
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
