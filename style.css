@@ -671,7 +671,7 @@ html {
 /* Bottom-left logo on contact page */
 .contact-logo {
   position: absolute;
-  bottom: 3px;   /* moves it closer to the bottom edge */
+  bottom: 0;   /* moves it closer to the bottom edge */
   left: 25px;     /* moves it closer to the left edge */
   width: 70px;    /* smaller size */
   height: auto;
@@ -681,6 +681,7 @@ html {
 footer {
   border-top: none; /* remove line */
 }
+
 
 
 
