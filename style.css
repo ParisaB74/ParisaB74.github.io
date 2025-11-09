@@ -679,9 +679,10 @@ html {
   position: absolute;
   bottom: 0;
  left: 25px;
-  width: 120px;  /* increased from 60px */
+  width: 180px;  /* increased from 60px */
   height: auto;
 }
+
 
 
 
