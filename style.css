@@ -669,19 +669,19 @@ html {
 }
 
 /* Bottom-left logo on contact page */
-.contact-page {
-  position: relative; /* only affects this page */
+
+
+.contact-logo-wrapper {
+  position: relative;
 }
 
-.contact-page .contact-logo {
+.contact-logo {
   position: absolute;
   bottom: 0;
   left: 25px;
   width: 60px;
   height: auto;
-  z-index: 10;
 }
-
 
 
 
