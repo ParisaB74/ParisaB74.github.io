@@ -395,6 +395,93 @@ footer {
   background-color: #002f5c;
 }
 
+/* About Hero */
+.about-hero {
+  background-color: #ffffff;
+  padding: 60px 5%;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 55%;
+  color: #333;
+}
+
+.about-text h1 {
+  font-size: 42px;
+  color: #004b8d;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about-text h2 {
+  font-size: 24px;
+  color: #004b8d;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.about-text ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  line-height: 1.8;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #004b8d;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text {
+    max-width: 100%;
+  }
+  .about-image img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* How It Works Hero */
 .how-it-works-hero {
@@ -682,91 +769,5 @@ html {
   width: 350px;  /* increased from 60px */
   height: auto;
 }
-
-
-/* About Hero */
-.about-hero {
-  background-color: #ffffff;
-  padding: 60px 5%;
-}
-
-.about-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.about-text {
-  flex: 1;
-  max-width: 55%;
-  color: #333;
-}
-
-.about-text h1 {
-  font-size: 42px;
-  color: #004b8d;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-.about-text h2 {
-  font-size: 24px;
-  color: #004b8d;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.about-text p {
-  font-size: 18px;
-  line-height: 1.7;
-  margin-bottom: 15px;
-}
-
-.about-text ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  line-height: 1.8;
-}
-
-.about-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.about-image img {
-  width: 350px;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 6px solid #004b8d;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .about-text {
-    max-width: 100%;
-  }
-  .about-image img {
-    width: 300px;
-    height: 300px;
-  }
-}
-
-
-
-
-
-
-
-
-
 
 
