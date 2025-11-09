@@ -112,18 +112,23 @@ window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
   const pageHeight = document.body.scrollHeight - window.innerHeight;
 
-  // Show logo when near the bottom of the page
-  if (scrollY > pageHeight - 100) {
-    logo.classList.add("visible");
+  // Only show when within 80px of bottom
+  if (scrollY >= pageHeight - 80) {
+    if (!logo.classList.contains("visible")) {
+      logo.classList.add("visible");
+    }
   } else {
+    // Instantly hide when going up
     logo.classList.remove("visible");
   }
 });
 </script>
 
+
 </body>
 
 </html>
+
 
 
 
