@@ -671,19 +671,19 @@ html {
 /* Bottom-left logo on contact page */
 .contact-logo {
   position: fixed;
-  bottom: 60px;
-  left: 120px;
-  z-index: 1000;
+  bottom: 25px;       /* fixed at the bottom */
+  left: 25px;         /* fixed at the left */
+  width: 100px;       /* adjust size */
+  height: auto;
   opacity: 0;
-  transition: opacity 0.15s ease-out; /* faster fade */
-  pointer-events: none;
+  transition: opacity 0.15s ease-in-out; /* fast fade */
+  pointer-events: none;  /* prevents blocking other elements */
+  z-index: 999;
 }
 
 .contact-logo.visible {
-  opacity: 0.9;
-  transition: opacity 0.3s ease-in; /* smoother fade-in */
+  opacity: 1;
 }
-
 
 
 .contact-logo img {
@@ -701,6 +701,7 @@ html {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 0.9; transform: translateY(0); }
 }
+
 
 
 
