@@ -928,23 +928,6 @@ section::after {
 
 
 
-/* Remove any unwanted horizontal lines between sections */
-.contact-section,
-.contact-hero,
-.services-hero,
-.how-it-works-steps,
-.about-section {
-  border: none !important;
-  outline: none !important;
-}
-
-/* Smooth transition between white and light-grey backgrounds */
-.contact-hero {
-  background: linear-gradient(180deg, #f5f5f5 0%, #ffffff 100%);
-}
-
-
-
 
 
 
