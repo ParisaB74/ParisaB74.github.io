@@ -123,7 +123,35 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
+<script>
+  // Keep dropdown tidy: close after clicking an item
+  document.querySelectorAll('.dropdown-content a').forEach(link => {
+    link.addEventListener('click', () => {
+      const dd = link.closest('.dropdown');
+      if (dd) dd.classList.remove('open');
+    });
+  });
+
+  // Highlight the service card that matches the current hash
+  function highlightCard() {
+    // clear previous
+    document.querySelectorAll('.service-card').forEach(c => c.classList.remove('highlight'));
+    // apply to current
+    const { hash } = window.location;
+    if (!hash) return;
+    const el = document.querySelector(hash);
+    if (el && el.classList.contains('service-card')) {
+      el.classList.add('highlight');
+      // bring it into view nicely
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+
+  window.addEventListener('load', highlightCard);
+  window.addEventListener('hashchange', highlightCard);
+</script>
 
 </body>
 </html>
+
 
