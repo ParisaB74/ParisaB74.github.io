@@ -1008,7 +1008,8 @@ html {
   z-index: 1;
 }
 
-/* --- Restore white dots for all hero sections --- */
+
+/* Two overlapping circles on the left of hero text */
 .hero::before,
 .services-hero::before,
 .about-hero::before,
@@ -1017,20 +1018,17 @@ html {
   content: "";
   position: absolute;
   top: 35%;
-  left: 330px;
-  width: 25px;
-  height: 25px;
-  background-color: #ffffff;
+  left: 260px; /* adjust for alignment beside text */
+  width: 80px; /* larger circle */
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 50%;
-  box-shadow:
-    -45px 45px 0 #ffffff,
-    -90px 90px 0 #ffffff;
-  transform: rotate(10deg) translateY(-50%);
-  opacity: 0.9;
-  z-index: 2;
+  box-shadow: 
+    40px 20px 0 rgba(255, 255, 255, 0.7); /* smaller overlapping circle */
+  z-index: 1;
 }
 
-/* Ensure all hero sections allow absolute positioning */
+/* Ensure hero sections allow absolute positioning */
 .hero,
 .services-hero,
 .about-hero,
@@ -1039,6 +1037,8 @@ html {
   position: relative;
   overflow: hidden;
 }
+
+
 
 
 
