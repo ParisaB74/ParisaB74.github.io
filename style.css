@@ -1010,6 +1010,7 @@ html {
 
 
 /* Two overlapping outlined circles beside hero text */
+/* Two fully visible overlapping empty circles beside hero text */
 .hero::before,
 .services-hero::before,
 .about-hero::before,
@@ -1018,29 +1019,41 @@ html {
   content: "";
   position: absolute;
   top: 35%;
-  left: 240px; /* adjust position beside text */
-  width: 80px;  /* larger circle */
-  height: 80px;
-  border: 2px solid #ffffff; /* thin white border */
+  left: 80px; /* moved more inward from the edge */
+  width: 90px;
+  height: 90px;
+  border: 2px solid #ffffff;
   border-radius: 50%;
-  box-shadow:
-    35px 25px 0 0 rgba(255, 255, 255, 0.9); /* smaller circle offset */
   z-index: 1;
   opacity: 0.9;
 }
 
-/* Ensure hero sections allow absolute positioning */
+.hero::after,
+.services-hero::after,
+.about-hero::after,
+.how-it-works-hero::after,
+.contact-hero::after {
+  content: "";
+  position: absolute;
+  top: 41%;
+  left: 130px; /* ensures both circles are visible and slightly overlapped */
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+/* Ensure circles appear properly */
 .hero,
 .services-hero,
 .about-hero,
 .how-it-works-hero,
 .contact-hero {
   position: relative;
-  overflow: hidden;
+  overflow: visible; /* ensures full circles show */
 }
-
-
-
 
 
 
