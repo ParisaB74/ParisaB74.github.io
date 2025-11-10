@@ -1011,41 +1011,54 @@ html {
 
 /* Two overlapping outlined circles beside hero text */
 /* Two fully visible overlapping empty circles beside hero text */
-.hero::before,
-.services-hero::before,
-.about-hero::before,
-.how-it-works-hero::before,
-.contact-hero::before {
+/* Make sure hero headings can host positioned pseudo-elements */
+.hero h1,
+.services-hero h1,
+.about-hero h1,
+.how-it-works-hero h1,
+.contact-hero h1 {
+  position: relative;
+  z-index: 1;
+}
+
+/* Big hollow circle */
+.hero h1::before,
+.services-hero h1::before,
+.about-hero h1::before,
+.how-it-works-hero h1::before,
+.contact-hero h1::before {
   content: "";
   position: absolute;
-  top: 35%;
-  left: 80px; /* moved more inward from the edge */
+  top: 50%;
+  left: -110px;          /* adjust to taste */
+  transform: translateY(-50%);
   width: 90px;
   height: 90px;
   border: 2px solid #ffffff;
   border-radius: 50%;
-  z-index: 1;
-  opacity: 0.9;
+  background: transparent;   /* ensure empty */
+  pointer-events: none;
 }
 
-.hero::after,
-.services-hero::after,
-.about-hero::after,
-.how-it-works-hero::after,
-.contact-hero::after {
+/* Smaller hollow circle */
+.hero h1::after,
+.services-hero h1::after,
+.about-hero h1::after,
+.how-it-works-hero h1::after,
+.contact-hero h1::after {
   content: "";
   position: absolute;
-  top: 41%;
-  left: 130px; /* ensures both circles are visible and slightly overlapped */
+  top: 50%;
+  left: -55px;           /* overlaps slightly with the big one */
+  transform: translateY(-50%);
   width: 60px;
   height: 60px;
   border: 2px solid #ffffff;
   border-radius: 50%;
-  z-index: 1;
-  opacity: 0.9;
+  background: transparent;   /* ensure empty */
+  pointer-events: none;
 }
 
-/* Ensure circles appear properly */
 .hero,
 .services-hero,
 .about-hero,
@@ -1054,7 +1067,6 @@ html {
   position: relative;
   overflow: visible; /* ensures full circles show */
 }
-
 
 
 
