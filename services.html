@@ -156,9 +156,22 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener('load', highlightCard);
   window.addEventListener('hashchange', highlightCard);
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 }); // smaller threshold triggers earlier
 
+  document.querySelectorAll('.service-card').forEach(card => observer.observe(card));
+});
+</script>
 </body>
 </html>
+
 
 
 
