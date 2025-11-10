@@ -117,6 +117,54 @@ footer {
   gap: 40px; /* smaller gap between text and image */
   flex-wrap: wrap; /* allow wrapping on small screens */
 }
+/* Wave background for home hero */
+.home-hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #eaf3ff, #fff5eb);
+}
+
+.home-hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="1" d="M0,224L80,213.3C160,203,320,181,480,170.7C640,160,800,160,960,186.7C1120,213,1280,267,1360,293.3L1440,320L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>') 
+              no-repeat bottom;
+  background-size: cover;
+  pointer-events: none;
+}
+.home-hero::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, #ffffff);
+  pointer-events: none;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #eaf3ff, #fff5eb);
+}
+
+/* Wave shape at the bottom of hero */
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="1" d="M0,192L80,208C160,224,320,256,480,245.3C640,235,800,181,960,165.3C1120,149,1280,171,1360,181.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>') 
+              no-repeat bottom;
+  background-size: cover;
+}
 
 .home-text {
   flex: 1;
@@ -697,26 +745,6 @@ html {
 
 /* Three angled dots beside hero text (flipped & larger) */
 /* Three angled dots beside hero text (larger + more spacing) */
-.hero::before,
-.services-hero::before,
-.about-hero::before,
-.how-it-works-hero::before,
-.contact-hero::before {
-  content: "";
-  position: absolute;
-  top: 30%;
-  left: 330px; /* adjust horizontal position */
-  width: 25px;   /* dot size */
-  height: 25px;
-  background-color: #ffffff; /* your main blue */
-  border-radius: 50%;
-  box-shadow:
-    -45px 45px 0 #ffffff,   /* increased gap */
-    -90px 90px 0 #ffffff;   /* second dot further apart */
-  transform: rotate(10deg) translateY(-50%);
-  z-index: 1;
-  opacity: 0.85;
-}
 
 /* Bottom-left logo on contact page */
 
@@ -890,17 +918,7 @@ html {
   position: relative;
   overflow: hidden;
 }
-.home-hero::before {
-  content: "";
-  position: absolute;
-  top: 20%;
-  left: 5%;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(0,75,141,0.08), transparent 70%);
-  border-radius: 50%;
-  z-index: 0;
-}
+
 .home-text, .home-image { position: relative; z-index: 1; }
 
 /* soft parallax effect on image */
@@ -950,6 +968,7 @@ html {
   position: relative; /* needed so ::after attaches correctly */
   overflow: hidden;   /* hides the overflow of the gradient */
 }
+
 
 
 
