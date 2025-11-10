@@ -118,33 +118,36 @@ footer {
   flex-wrap: wrap; /* allow wrapping on small screens */
 }
 /* Wave background for home hero */
+/* Two elegant crossing waves at bottom of home hero */
 .home-hero {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(to right, #eaf3ff, #fff5eb);
+  background-color: #ffffff; /* keep it fully white */
 }
 
-.home-hero::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 140px;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="1" d="M0,224L80,213.3C160,203,320,181,480,170.7C640,160,800,160,960,186.7C1120,213,1280,267,1360,293.3L1440,320L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>') 
-              no-repeat bottom;
-  background-size: cover;
-  pointer-events: none;
-}
+.home-hero::after,
 .home-hero::before {
   content: "";
   position: absolute;
-  bottom: 0;
   left: 0;
   width: 100%;
-  height: 60px;
-  background: linear-gradient(to bottom, transparent, #ffffff);
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
   pointer-events: none;
+}
+
+/* Bottom wave (first layer, light gray-blue) */
+.home-hero::after {
+  bottom: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23eaf3ff" fill-opacity="1" d="M0,256L60,245.3C120,235,240,213,360,197.3C480,181,600,171,720,186.7C840,203,960,245,1080,245.3C1200,245,1320,203,1380,181.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>');
+}
+
+/* Second thinner wave (white overlay, slightly higher) */
+.home-hero::before {
+  bottom: 20px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="1" d="M0,288L80,282.7C160,277,320,267,480,250.7C640,235,800,213,960,213.3C1120,213,1280,235,1360,245.3L1440,256L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>');
+  opacity: 0.9;
 }
 
 .hero {
@@ -968,6 +971,7 @@ html {
   position: relative; /* needed so ::after attaches correctly */
   overflow: hidden;   /* hides the overflow of the gradient */
 }
+
 
 
 
