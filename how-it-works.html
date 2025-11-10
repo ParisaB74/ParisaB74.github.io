@@ -115,9 +115,27 @@
     observer.observe(step);
   });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  document.querySelectorAll('.how-it-works-steps .step').forEach(step => {
+    step.classList.add('fade-in');
+    observer.observe(step);
+  });
+});
+</script>
 
 </body>
 </html>
+
 
 
 
