@@ -5,27 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services – Grant Services</title>
   <link rel="stylesheet" href="style.css">
-</head>
-  <script>
-  // Close dropdown when any link inside it is clicked
-  document.querySelectorAll('.dropdown-content a').forEach(link => {
-    link.addEventListener('click', () => {
-      const dropdown = link.closest('.dropdown');
-      if (dropdown) {
-        dropdown.classList.remove('open');
-      }
-    });
-  });
 
-  // Optional: toggle dropdown open/close on click (for mobile)
-  document.querySelectorAll('.dropbtn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault(); // prevent page reload if needed
-      const parent = btn.parentElement;
-      parent.classList.toggle('open');
-    });
-  });
-</script>
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
 
 <body>
 <header>
@@ -34,103 +17,89 @@
   </div>
   <nav>
     <ul>
-       <li class="dropdown">
-  <a href="index.html" class="dropbtn">Home</a>
-  <div class="dropdown-content">
-    <a href="index.html#grow">We Help Communities Grow</a>
-    <a href="index.html#benefit">Who Can Benefit</a>
-    <a href="index.html#funding">Effortless Funding</a>
-    <a href="index.html#consultation">Book a Free Consultation</a>
-  </div>
-</li>
       <li class="dropdown">
-  <a href="services.html" class="dropbtn active">Services</a>
-  <div class="dropdown-content">
-     <a href="services.html#research">Grant Research</a>
-    <a href="services.html#definition">Project Definition</a>
-    <a href="services.html#proposal">Proposal Writing</a>
-   
-    <a href="services.html#report">Report Writing</a>
-    <a href="services.html#consultation">Consultation</a>
-  </div>
-</li>
+        <a href="index.html" class="dropbtn">Home</a>
+        <div class="dropdown-content">
+          <a href="index.html#grow">We Help Communities Grow</a>
+          <a href="index.html#benefit">Who Can Benefit</a>
+          <a href="index.html#funding">Effortless Funding</a>
+          <a href="index.html#consultation">Book a Free Consultation</a>
+        </div>
+      </li>
+
+      <li class="dropdown">
+        <a href="services.html" class="dropbtn active">Services</a>
+        <div class="dropdown-content">
+          <a href="services.html#research">Grant Research</a>
+          <a href="services.html#definition">Project Definition</a>
+          <a href="services.html#proposal">Proposal Writing</a>
+          <a href="services.html#report">Report Writing</a>
+          <a href="services.html#consultation">Consultation</a>
+        </div>
+      </li>
+
       <li><a href="how-it-works.html">How It Works</a></li>
-       <li><a href="about.html">About Us</a></li>
+      <li><a href="about.html">About Us</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
 
 <!-- Hero Section -->
-<section class="services-hero">
+<section class="services-hero" data-aos="fade-down">
   <h1>Our Services</h1>
   <p>Complete support through every stage of your grant application</p>
 </section>
 
- 
+<!-- Services Grid -->
 <section class="services-grid">
+  <div id="proposal" class="service-card" data-aos="fade-up" data-aos-delay="100">
+    <img src="C.png" alt="Proposal Writing">
+    <h2>Proposal Writing</h2>
+    <p>We craft compelling, evidence-based proposals tailored to funders’ priorities — increasing your chances of success.</p>
+  </div>
 
-  <div id="proposal" class="service-card">
-  <img src="C.png" alt="Proposal Writing">
-  <h2>Proposal Writing</h2>
-  <p>We craft compelling, evidence-based proposals tailored to funders’ priorities — increasing your chances of success.</p>
-</div>
+  <div id="research" class="service-card" data-aos="fade-up" data-aos-delay="200">
+    <img src="SA.png" alt="Grant Research">
+    <h2>Grant Research</h2>
+    <p>We research and identify the most suitable municipal, provincial, and federal grant opportunities for your organization — ensuring you apply for funding that best matches your goals, eligibility, and priorities.</p>
+  </div>
 
-<div id="research" class="service-card">
-  <img src="SA.png" alt="Grant Research">
-  <h2>Grant Research</h2>
-  <p>We research and identify the most suitable municipal, provincial, and federal grant opportunities for your organization — ensuring you apply for funding that best matches your goals, eligibility, and priorities.</p>
-</div>
+  <div id="definition" class="service-card" data-aos="fade-up" data-aos-delay="300">
+    <img src="B.png" alt="Project Definition">
+    <h2>Project Definition</h2>
+    <p>We help you refine your project idea, set clear goals, and align it with funding requirements before applying.</p>
+  </div>
 
-<div id="definition" class="service-card">
-  <img src="B.png" alt="Project Definition">
-  <h2>Project Definition</h2>
-  <p>We help you refine your project idea, set clear goals, and align it with funding requirements before applying.</p>
-</div>
+  <div id="report" class="service-card" data-aos="fade-up" data-aos-delay="400">
+    <img src="SD.png" alt="Report Writing">
+    <h2>Report Writing</h2>
+    <p>We prepare detailed reports to help you meet funder expectations, demonstrate impact, and maintain future eligibility.</p>
+  </div>
 
-<div id="report" class="service-card">
-  <img src="SD.png" alt="Report Writing">
-  <h2>Report Writing</h2>
-  <p>We prepare detailed reports to help you meet funder expectations, demonstrate impact, and maintain future eligibility.</p>
-</div>
-
-<div id="consultation" class="service-card">
-  <img src="A.png" alt="Consultation">
-  <h2>Consultation</h2>
-  <p>Book a consultation to explore available grants and get expert guidance for your organization.</p>
-</div>
-
-
+  <div id="consultation" class="service-card" data-aos="fade-up" data-aos-delay="500">
+    <img src="A.png" alt="Consultation">
+    <h2>Consultation</h2>
+    <p>Book a consultation to explore available grants and get expert guidance for your organization.</p>
+  </div>
 </section>
-<div class="services-decoration"></div>
+
 <footer>
   <p>© 2023 Secure Grants Pro. All rights reserved.</p>
 </footer>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
-  // Function to highlight the target card
-  function highlightCard() {
-    const hash = window.location.hash;
-    // Remove highlight from all cards first
-    document.querySelectorAll('.service-card').forEach(card => {
-      card.classList.remove('highlight');
-    });
-    // Highlight the one matching the hash
-    if (hash) {
-      const targetCard = document.querySelector(hash);
-      if (targetCard && targetCard.classList.contains('service-card')) {
-        targetCard.classList.add('highlight');
-      
-      }
-    }
-  }
-
-  // Run when page first loads
-  window.addEventListener('load', highlightCard);
-
-  // Run again whenever the hash changes (like when clicking within same page)
-  window.addEventListener('hashchange', highlightCard);
+  AOS.init({
+    duration: 900,
+    easing: 'ease-out',
+    once: true
+  });
 </script>
-  <script>
+
+<!-- Header scroll hide/show -->
+<script>
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector("header");
   if (!header) return;
@@ -143,10 +112,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (currentScroll <= 0) {
       header.style.top = "0";
     } else if (currentScroll > lastScroll) {
-      // scrolling down – hide
       header.style.top = "-120px";
     } else {
-      // scrolling up – show
       header.style.top = "0";
     }
 
@@ -157,26 +124,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
