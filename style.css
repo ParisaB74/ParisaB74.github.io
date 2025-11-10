@@ -434,25 +434,30 @@ footer {
 
 /* Steps Section */
 .how-it-works-steps {
-  display: flex;
+   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 40px;
-  padding: 60px 5%;
-  background-color: #ffffff;
+  padding: 80px 5%;
+  background: linear-gradient(135deg, #f9fbff 0%, #fffaf5 100%);
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .how-it-works-steps .step {
-  background: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  flex: 1 1 260px;
+  max-width: 300px;
+  text-align: center;
   padding: 30px 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 75, 141, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .how-it-works-steps .step:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 75, 141, 0.15);
 }
 
 
@@ -481,6 +486,17 @@ footer {
   vertical-align: middle;
 }
 
+.how-it-works-steps::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(0,75,141,0.05), transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+}
 
 .how-it-works-steps .step p {
   font-size: 16px;
@@ -900,6 +916,7 @@ html {
 }
 
 /* Hover pop effect for step images */
+
 
 
 
