@@ -444,8 +444,7 @@ footer {
   gap: 40px;
   padding: 80px 5%;
   background: linear-gradient(135deg, #f9fbff 0%, #fffaf5 100%);
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
+
 }
 
 .how-it-works-steps .step {
@@ -925,6 +924,7 @@ section::after {
   height: 80px;
   background: linear-gradient(to top, #fff, transparent);
 }
+
 
 
 
