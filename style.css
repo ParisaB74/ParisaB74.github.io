@@ -942,6 +942,15 @@ html {
   pointer-events: none; /* keeps links clickable */
 }
 
+.hero,
+.services-hero,
+.about-hero,
+.how-it-works-hero,
+.contact-hero {
+  position: relative; /* needed so ::after attaches correctly */
+  overflow: hidden;   /* hides the overflow of the gradient */
+}
+
 
 
 
