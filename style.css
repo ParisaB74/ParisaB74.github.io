@@ -1030,7 +1030,7 @@ html {
   content: "";
   position: absolute;
   top: 50%;
-  left: 130px;          /* adjust to taste */
+  left: 190px;          /* adjust to taste */
   transform: translateY(-50%);
   width: 90px;
   height: 90px;
@@ -1049,7 +1049,7 @@ html {
   content: "";
   position: absolute;
   top: 50%;
-  left: 230px;           /* overlaps slightly with the big one */
+  left: 260px;           /* overlaps slightly with the big one */
   transform: translateY(-50%);
   width: 60px;
   height: 60px;
@@ -1067,6 +1067,7 @@ html {
   position: relative;
   overflow: visible; /* ensures full circles show */
 }
+
 
 
 
