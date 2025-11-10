@@ -1,192 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- AOS Animation Library -->
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home – Grant Services</title>
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
   <link rel="stylesheet" href="style.css">
 </head>
-  <script>
-  // Close dropdown when any link inside it is clicked
-  document.querySelectorAll('.dropdown-content a').forEach(link => {
-    link.addEventListener('click', () => {
-      const dropdown = link.closest('.dropdown');
-      if (dropdown) {
-        dropdown.classList.remove('open');
-      }
-    });
-  });
-
-  // Optional: toggle dropdown open/close on click (for mobile)
-  document.querySelectorAll('.dropbtn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault(); // prevent page reload if needed
-      const parent = btn.parentElement;
-      parent.classList.toggle('open');
-    });
-  });
-</script>
 
 <body>
-<header>
-  <div class="logo">
-    <img src="logo.png" alt="My Logo">
-  </div>
-  <nav>
-    <ul>
-     <li class="dropdown">
-  <a href="index.html" class="dropbtn active">Home</a>
-  <div class="dropdown-content">
-    <a href="index.html#grow">We Help Communities Grow</a>
-    <a href="index.html#benefit">Who Can Benefit</a>
-    <a href="index.html#funding">Effortless Funding</a>
-    <a href="index.html#consultation">Book a Free Consultation</a>
-  </div>
-</li>
 
-      <li class="dropdown">
-  <a href="services.html" class="dropbtn">Services</a>
-  <div class="dropdown-content">
-     <a href="services.html#research">Grant Research</a>
-    <a href="services.html#definition">Project Definition</a>
-    <a href="services.html#proposal">Proposal Writing</a>
-   
-    <a href="services.html#report">Report Writing</a>
-    <a href="services.html#consultation">Consultation</a>
-  </div>
-</li>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="My Logo">
+    </div>
+    <nav>
+      <ul>
+        <li class="dropdown">
+          <a href="index.html" class="dropbtn active">Home</a>
+          <div class="dropdown-content">
+            <a href="#grow">We Help Communities Grow</a>
+            <a href="#benefit">Who Can Benefit</a>
+            <a href="#funding">Effortless Funding</a>
+            <a href="#consultation">Book a Free Consultation</a>
+          </div>
+        </li>
 
-      <li><a href="how-it-works.html">How It Works</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+        <li class="dropdown">
+          <a href="services.html" class="dropbtn">Services</a>
+          <div class="dropdown-content">
+            <a href="services.html#research">Grant Research</a>
+            <a href="services.html#definition">Project Definition</a>
+            <a href="services.html#proposal">Proposal Writing</a>
+            <a href="services.html#report">Report Writing</a>
+            <a href="services.html#consultation">Consultation</a>
+          </div>
+        </li>
 
-<!-- Hero Section (Slogan) -->
-<section class="hero">
-  <div class="hero-content">
-    <h1>Your Funding is Secured!</h1>
-  </div>
-</section>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- Main Hero Section -->
-<section id="grow" class="home-hero">
-  <div class="home-text">
-    <h1>We Help Communities Grow</h1>
-    <p><strong>Secure Grants Pro</strong> secures funding for projects from events to youth and senior programs, facility renovations and security. Your funding is our mission.</p>
-  </div>
-  <div class="home-image">
-    <img src="Homeone.png" alt="Home one">
-  </div>
-</section>
+  <!-- Hero Section (Slogan) -->
+  <section class="hero" data-aos="fade-up">
+    <div class="hero-content">
+      <h1>Your Funding is Secured!</h1>
+    </div>
+  </section>
 
-<!-- Secondary Hero Section -->
-<section id="benefit" class="secondary-hero">
-  <div class="secondary-image">
-    <img src="Hometwo.png" alt="Secondary image">
-  </div>
-  <div class="secondary-text">
-    <h1>Who Can Benefit</h1>
-    <p>We secure funding for all types of organizations with a focus on supporting non-profits and charities to strengthen our communities.</p>
-  </div>
-</section>
+  <!-- Main Hero Section -->
+  <section id="grow" class="home-hero">
+    <div class="home-text" data-aos="fade-right">
+      <h1>We Help Communities Grow</h1>
+      <p><strong>Secure Grants Pro</strong> secures funding for projects from events to youth and senior programs, facility renovations and security. Your funding is our mission.</p>
+    </div>
+    <div class="home-image" data-aos="fade-left">
+      <img src="Homeone.png" alt="Home one">
+    </div>
+  </section>
 
-<!-- Effortless Funding Section -->
-<section id="funding" class="hero-3">
-  <div class="hero-3-text">
-    <h2>Effortless Funding</h2>
-    <p>We handle the entire process for you — no loans, no pressure, no obligations. Simply share your project, and we’ll create a detailed plan and a strong grant proposal tailored to your organization.</p>
-  </div>
-  <div class="hero-3-image">
-    <img src="Home3.png" alt="No Obligation Funding">
-  </div>
-</section>
+  <!-- Secondary Hero Section -->
+  <section id="benefit" class="secondary-hero">
+    <div class="secondary-image" data-aos="fade-right">
+      <img src="Hometwo.png" alt="Secondary image">
+    </div>
+    <div class="secondary-text" data-aos="fade-left">
+      <h1>Who Can Benefit</h1>
+      <p>We secure funding for all types of organizations with a focus on supporting non-profits and charities to strengthen our communities.</p>
+    </div>
+  </section>
 
-<!-- Book a Free Consultation Section -->
-<section id="consultation" class="hero-4">
-  <div class="hero-4-text">
-    <h2>Here to Answer</h2>
-    <p>Would you like to find a funding opportunity that suits your organization? Just book a 15 minutes <strong>free consultation</strong> with us — we’ll provide all the information you need.</p>
-    <a href="contact.html" class="button">Book Your Free Consultation</a>
-  </div>
-</section>
+  <!-- Effortless Funding Section -->
+  <section id="funding" class="hero-3">
+    <div class="hero-3-text" data-aos="fade-right">
+      <h2>Effortless Funding</h2>
+      <p>We handle the entire process for you — no loans, no pressure, no obligations. Simply share your project, and we’ll create a detailed plan and a strong grant proposal tailored to your organization.</p>
+    </div>
+    <div class="hero-3-image" data-aos="fade-left">
+      <img src="Home3.png" alt="No Obligation Funding">
+    </div>
+  </section>
 
-    
-<footer>
-  <p>© 2023 Secure Grants Pro. All rights reserved.</p>
-</footer>
-<script src="script.js"></script>
+  <!-- Book a Free Consultation Section -->
+  <section id="consultation" class="hero-4" data-aos="fade-up">
+    <div class="hero-4-text">
+      <h2>Here to Answer</h2>
+      <p>Would you like to find a funding opportunity that suits your organization? Just book a 15 minutes <strong>free consultation</strong> with us — we’ll provide all the information you need.</p>
+      <a href="contact.html" class="button">Book Your Free Consultation</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2023 Secure Grants Pro. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
   <script>
-const items = document.querySelectorAll('.fade-in');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('visible');
-  });
-});
-items.forEach(item => observer.observe(item));
-</script>
-<script>
-  AOS.init({
-    duration: 1200,      // duration of the animation in ms
-    easing: 'ease-out',  // smooth natural motion
-    once: true           // animate only once
-  });
-</script>
+    // Dropdown toggle for mobile
+    document.querySelectorAll('.dropbtn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        btn.parentElement.classList.toggle('open');
+      });
+    });
+
+    // Initialize AOS
+    AOS.init({
+      duration: 1200,
+      easing: 'ease-out',
+      once: true
+    });
+  </script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
