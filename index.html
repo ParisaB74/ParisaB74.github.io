@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -111,6 +115,15 @@
   <a href="contact.html" class="button">Book Your Free Consultation</a>
   </div>
 </section>
+<section class="home-hero" data-aos="fade-up">
+  <div class="home-text" data-aos="fade-right">
+    <h1>We Help Communities Grow</h1>
+    <p>...</p>
+  </div>
+  <div class="home-image" data-aos="fade-left">
+    <img src="Homeone.png" alt="Home one">
+  </div>
+</section>
 
 <section class="home-hero fade-in"></section>
 <section class="secondary-hero fade-in"></section>
@@ -129,9 +142,17 @@ const observer = new IntersectionObserver(entries => {
 });
 items.forEach(item => observer.observe(item));
 </script>
+<script>
+  AOS.init({
+    duration: 1200,      // duration of the animation in ms
+    easing: 'ease-out',  // smooth natural motion
+    once: true           // animate only once
+  });
+</script>
 
 </body>
 </html>
+
 
 
 
