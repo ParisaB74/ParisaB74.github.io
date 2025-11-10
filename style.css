@@ -874,14 +874,14 @@ html {
 /* --- Subtle fade & slide-in animation --- */
 .fade-in {
   opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.9s ease-out;
+  transform: translateY(50px);
+  transition: opacity 1.8s ease-out, transform 1.8s ease-out;
 }
+
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
 }
-
 
 .home-hero {
   position: relative;
@@ -910,6 +910,7 @@ html {
 }
 
 /* Hover pop effect for step images */
+
 
 
 
