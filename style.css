@@ -1090,14 +1090,19 @@ html {
 
 .home-hero::after,
 .home-hero .wave-top {
-  z-index: 0;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .home-text,
 .home-image {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
+.home-hero {
+  min-height: 500px;
+}
+
 
 
 
