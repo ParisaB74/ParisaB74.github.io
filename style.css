@@ -579,7 +579,7 @@ footer {
   justify-content: center;
   gap: 40px;
   padding: 60px 10%;
-  background-color: #ffffff;
+  background: linear-gradient(180deg, #f9fbff 0%, #ffffff 100%);
 }
 
 
@@ -595,8 +595,9 @@ footer {
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+   transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 75, 141, 0.15);
+  border-color: #004b8d;
 }
 
 .service-card img {
@@ -1065,6 +1066,17 @@ html {
 .hero-3-image img:hover {
   transform: scale(1.08) translateY(-8px);
   box-shadow: 0 12px 30px rgba(0, 75, 141, 0.4);
+}
+
+.services-hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, #f9fbff);
+  pointer-events: none;
 }
 
 
