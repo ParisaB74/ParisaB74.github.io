@@ -1058,6 +1058,26 @@ html {
   z-index: 1;
 }
 
+/* --- Image Hover Pop Animation for All Hero Images --- */
+.home-image img,
+.secondary-image img,
+.hero-3-image img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.home-image img:hover,
+.secondary-image img:hover,
+.hero-3-image img:hover {
+  transform: scale(1.08) translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+.home-image img:hover,
+.secondary-image img:hover,
+.hero-3-image img:hover {
+  transform: scale(1.08) translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 75, 141, 0.4);
+}
+
 
 
 
