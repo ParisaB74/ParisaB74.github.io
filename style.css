@@ -580,6 +580,13 @@ footer {
   gap: 40px;
   padding: 60px 10%;
   background: linear-gradient(180deg, #f9fbff 0%, #ffffff 100%);
+  background-image: url('data:image/svg+xml;utf8,
+    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="none" viewBox="0 0 100 100">
+      <rect x="10" y="10" width="30" height="40" rx="3" ry="3" fill="%23f5f8ff" stroke="%23d0e1ff" stroke-width="1"/>
+      <rect x="60" y="50" width="25" height="35" rx="2" ry="2" fill="%23f9fbff" stroke="%23d0e1ff" stroke-width="1" transform="rotate(-8 60 50)"/>
+    </svg>');
+  background-repeat: repeat;
+  background-size: 200px 200px;
 }
 
 
@@ -1078,6 +1085,7 @@ html {
   background: linear-gradient(to bottom, transparent, #f9fbff);
   pointer-events: none;
 }
+
 
 
 
