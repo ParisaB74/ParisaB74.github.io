@@ -582,18 +582,7 @@ footer {
   gap: 40px;
   padding: 60px 10%;
   background-color: #ffffff;
-  background-image:
-    repeating-linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.02) 0px,
-      rgba(0, 0, 0, 0.02) 1px,
-      transparent 1px,
-      transparent 24px
-    ),
-    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="100" fill="none" viewBox="0 0 500 100"><text x="0" y="40" font-size="18" fill="rgba(0,75,141,0.05)" font-family="Arial, sans-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text><text x="0" y="80" font-size="18" fill="rgba(0,75,141,0.04)" font-family="Arial, sans-serif">Praesent vel velit eu risus egestas cursus vitae quis justo.</text></svg>');
-  background-repeat: repeat;
-  background-size: 500px 200px;
-  background-position: center;
+ 
 }
 
 
@@ -1081,6 +1070,7 @@ html {
   transform: scale(1.08) translateY(-8px);
   box-shadow: 0 12px 30px rgba(0, 75, 141, 0.4);
 }
+
 
 
 
