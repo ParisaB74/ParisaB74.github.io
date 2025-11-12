@@ -105,6 +105,21 @@
     once: true
   });
 </script>
+<script>
+  AOS.init({
+    duration: 1000,
+    easing: 'ease-out',
+    once: true,
+    offset: 0, // triggers earlier
+  });
+
+  // Force immediate appearance when section enters view
+  window.addEventListener('load', () => {
+    document.querySelectorAll('[data-aos]').forEach(el => {
+      el.classList.add('aos-animate');
+    });
+  });
+</script>
 
 <!-- Header scroll hide/show -->
 <script>
@@ -171,6 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 </body>
 </html>
+
 
 
 
