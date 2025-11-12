@@ -573,14 +573,27 @@ footer {
 }
 
 /* Services Grid */
+
 .services-grid {
+  position: relative; /* required for background pseudo-elements */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
   padding: 60px 10%;
-  background: linear-gradient(180deg, #f9fbff 0%, #ffffff 100%);
-
+  background-color: #ffffff;
+  background-image:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.02) 0px,
+      rgba(0, 0, 0, 0.02) 1px,
+      transparent 1px,
+      transparent 24px
+    ),
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="100" fill="none" viewBox="0 0 500 100"><text x="0" y="40" font-size="18" fill="rgba(0,75,141,0.05)" font-family="Arial, sans-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</text><text x="0" y="80" font-size="18" fill="rgba(0,75,141,0.04)" font-family="Arial, sans-serif">Praesent vel velit eu risus egestas cursus vitae quis justo.</text></svg>');
+  background-repeat: repeat;
+  background-size: 500px 200px;
+  background-position: center;
 }
 
 
@@ -1069,27 +1082,7 @@ html {
   box-shadow: 0 12px 30px rgba(0, 75, 141, 0.4);
 }
 
-.services-hero::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  background: linear-gradient(to bottom, transparent, #f9fbff);
-  pointer-events: none;
-}
 
-.services-grid {
-  background-color: #ffffff;
-  background-image: url('data:image/svg+xml;utf8,
-    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="none" viewBox="0 0 100 100">
-      <rect x="10" y="10" width="30" height="40" rx="3" ry="3" fill="%23f5f8ff" stroke="%23d0e1ff" stroke-width="1"/>
-      <rect x="60" y="50" width="25" height="35" rx="2" ry="2" fill="%23f9fbff" stroke="%23d0e1ff" stroke-width="1" transform="rotate(-8 60 50)"/>
-    </svg>');
-  background-repeat: repeat;
-  background-size: 200px 200px;
-}
 
 
 
