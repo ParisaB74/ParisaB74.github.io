@@ -1301,14 +1301,13 @@ html {
   left: 70%;
   width: 90px;
   height: 60px;
- background: linear-gradient(
+background: linear-gradient(
   135deg,
-  #f7e7b7 0%,
-  #f1d48f 35%,
-  #ffedc2 60%,
-  #d9b45d 100%
+  #f8eec9 0%,
+  #f3e3b1 40%,
+  #e9d79a 75%,
+  #ddc988 100%
 );
-
 
   transform: rotate(-8deg);
 }
@@ -1355,6 +1354,7 @@ html {
   pointer-events: none;
   transform: rotate(8deg);
 }
+
 
 
 
