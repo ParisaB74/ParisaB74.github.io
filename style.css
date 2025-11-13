@@ -1280,7 +1280,7 @@ html {
   content: "";
   position: absolute;
   top: 40px;
-  left: -60px;
+  left: -20px;
   width: 180px;
   height: 110px;
   border: 2px solid rgba(0, 75, 141, 0.12);
@@ -1360,6 +1360,7 @@ html {
   z-index: 0;
   pointer-events: none;
 }
+
 
 
 
