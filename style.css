@@ -74,7 +74,7 @@ nav ul li a {
 
 nav ul li a.active,
 nav ul li a:hover {
-  background-color: #fff5eb; /* light grey hover */
+  background-color: #D5B88C33; /* light grey hover */
 }
 
 main {
@@ -1077,6 +1077,7 @@ html {
   transform: scale(1.08) translateY(-8px);
   box-shadow: 0 12px 30px rgba(0, 75, 141, 0.4);
 }
+
 
 
 
