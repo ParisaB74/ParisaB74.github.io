@@ -60,7 +60,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #004b8d;      /* Dark text for white toolbar */
+  color: #003B73;      /* Dark text for white toolbar */
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 4px;
@@ -1077,6 +1077,7 @@ html {
   transform: scale(1.08) translateY(-8px);
   box-shadow: 0 12px 30px rgba(0, 75, 141, 0.4);
 }
+
 
 
 
