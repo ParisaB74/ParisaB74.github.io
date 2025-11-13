@@ -1299,9 +1299,9 @@ html {
 .expertise-rect-1 {
   bottom: -60px;
   left: 70%;
-  width: 110px;
-  height: 80px;
-border: 2px solid rgba(199, 178, 125, 0.18);
+  width: 130px;
+  height: 100px;
+border: 2px solid rgba(181, 140, 44, 0.55);
 
   transform: rotate(-8deg);
 }
@@ -1348,6 +1348,7 @@ border: 2px solid rgba(199, 178, 125, 0.18);
   pointer-events: none;
   transform: rotate(8deg);
 }
+
 
 
 
