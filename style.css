@@ -1317,7 +1317,8 @@ html {
   left: 70%;
   width: 90px;
   height: 60px;
-  border: 2px solid rgba(0, 75, 141, 0.2);
+
+  background: rgba(128, 70, 180, 0.05);
   transform: rotate(-8deg);
 }
 
@@ -1363,6 +1364,7 @@ html {
   pointer-events: none;
   transform: rotate(8deg);
 }
+
 
 
 
