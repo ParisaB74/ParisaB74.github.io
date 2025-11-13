@@ -1075,30 +1075,33 @@ html {
   box-shadow: 0 12px 30px rgba(0, 75, 141, 0.4);
 }
 
-
-.home-hero::before {
+/* --- Subtle Side Decorations --- */
+body::before {
   content: "";
-  position: absolute;
-  left: -60px;
-  top: 50px;
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  background: radial-gradient(rgba(0,0,0,0.05), transparent 60%);
-  filter: blur(4px);
+  position: fixed;
+  top: 0;
+  left: -40px;
+  width: 200px;
+  height: 200px;
+  border-top: 2px solid #dceaff;
+  border-left: 2px solid #dceaff;
+  border-radius: 100%;
+  z-index: -1;
 }
 
-.home-hero::after {
+body::after {
   content: "";
-  position: absolute;
-  right: -70px;
-  bottom: 50px;
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  background: radial-gradient(rgba(0,0,0,0.07), transparent 70%);
-  filter: blur(4px);
+  position: fixed;
+  bottom: -40px;
+  right: -40px;
+  width: 200px;
+  height: 200px;
+  border-bottom: 2px solid #dceaff;
+  border-right: 2px solid #dceaff;
+  border-radius: 100%;
+  z-index: -1;
 }
+
 
 
 
