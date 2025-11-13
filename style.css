@@ -1076,6 +1076,30 @@ html {
 }
 
 
+.home-hero::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: 50px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(rgba(0,0,0,0.05), transparent 60%);
+  filter: blur(4px);
+}
+
+.home-hero::after {
+  content: "";
+  position: absolute;
+  right: -70px;
+  bottom: 50px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: radial-gradient(rgba(0,0,0,0.07), transparent 70%);
+  filter: blur(4px);
+}
+
 
 
 
