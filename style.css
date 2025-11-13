@@ -1301,7 +1301,14 @@ html {
   left: 70%;
   width: 90px;
   height: 60px;
-  background: rgba(217, 198, 144, 0.18);
+ background: linear-gradient(
+  135deg,
+  #f7e7b7 0%,
+  #f1d48f 35%,
+  #ffedc2 60%,
+  #d9b45d 100%
+);
+
 
   transform: rotate(-8deg);
 }
@@ -1348,6 +1355,7 @@ html {
   pointer-events: none;
   transform: rotate(8deg);
 }
+
 
 
 
