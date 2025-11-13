@@ -1333,6 +1333,34 @@ html {
   z-index: 2;
 }
 
+/* --- Right-side rectangles --- */
+
+/* Top-right medium rectangle */
+.expertise-rect-right-1 {
+  position: absolute;
+  top: 15%;
+  right: -50px;   /* pushes slightly outside the container, same style as left side */
+  width: 150px;
+  height: 90px;
+  border: 2px solid rgba(0, 75, 141, 0.12);
+  border-radius: 8px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Bottom-right smaller rectangle */
+.expertise-rect-right-2 {
+  position: absolute;
+  bottom: 10%;
+  right: 20px;
+  width: 110px;
+  height: 70px;
+  border: 2px solid rgba(0, 75, 141, 0.12);
+  border-radius: 8px;
+  z-index: 0;
+  pointer-events: none;
+}
+
 
 
 
