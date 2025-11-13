@@ -895,10 +895,7 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
-.home-hero {
-  position: relative;
-  overflow: hidden;
-}
+
 
 .home-text, .home-image { position: relative; z-index: 1; }
 
@@ -1156,14 +1153,6 @@ html {
 
 
 
-/* --- Our Expertise Section --- */
-.expertise-section {
-  padding: 80px 10%;
-  background: #f9fbff; /* soft light-blue background */
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
 
 /* Fade gradient top + bottom to match your other sections */
 .expertise-section::before,
@@ -1247,12 +1236,6 @@ html {
   }
 }
 
-.expertise-section {
-  position: relative;
-  padding: 80px 10%;
-  background: #ffffff;
-  overflow: hidden;
-}
 
 /* diagonal stroke */
 .expertise-section::before {
@@ -1317,8 +1300,8 @@ html {
   left: 70%;
   width: 90px;
   height: 60px;
+  background: rgba(255, 215, 0, 0.10);
 
-  background: rgba(128, 70, 180, 0.05);
   transform: rotate(-8deg);
 }
 
@@ -1364,6 +1347,7 @@ html {
   pointer-events: none;
   transform: rotate(8deg);
 }
+
 
 
 
