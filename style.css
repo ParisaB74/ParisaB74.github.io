@@ -1299,15 +1299,9 @@ html {
 .expertise-rect-1 {
   bottom: -60px;
   left: 70%;
-  width: 90px;
-  height: 60px;
-background: linear-gradient(
-  135deg,
-  #f8eec9 0%,
-  #f3e3b1 40%,
-  #e9d79a 75%,
-  #ddc988 100%
-);
+  width: 110px;
+  height: 80px;
+border: 2px solid rgba(199, 178, 125, 0.18);
 
   transform: rotate(-8deg);
 }
@@ -1354,6 +1348,7 @@ background: linear-gradient(
   pointer-events: none;
   transform: rotate(8deg);
 }
+
 
 
 
