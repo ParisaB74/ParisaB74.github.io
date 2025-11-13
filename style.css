@@ -1103,6 +1103,30 @@ body::after {
 }
 
 
+/* --- Subtle Vertical Side Decorations for HOME PAGE ONLY --- */
+.home-page::before,
+.home-page::after {
+  content: "";
+  position: fixed;
+  width: 160px;
+  height: 300px;
+  background: radial-gradient(circle at center, rgba(0,75,141,0.08), transparent 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Left decoration */
+.home-page::before {
+  left: 0;
+  top: 25%;
+}
+
+/* Right decoration */
+.home-page::after {
+  right: 0;
+  top: 55%;
+}
+
 
 
 
