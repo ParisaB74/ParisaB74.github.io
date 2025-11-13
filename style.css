@@ -1247,6 +1247,44 @@ html {
   }
 }
 
+.expertise-section {
+  position: relative;
+  padding: 80px 10%;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* diagonal stroke */
+.expertise-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 200px;
+  height: 2px;
+  background-color: rgba(0,75,141,0.15);
+  transform: rotate(25deg);
+  z-index: 0;
+}
+
+/* second crossing stroke */
+.expertise-section::after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  right: 15%;
+  width: 180px;
+  height: 2px;
+  background-color: rgba(0,75,141,0.15);
+  transform: rotate(-20deg);
+  z-index: 0;
+}
+
+.expertise-section * {
+  position: relative;
+  z-index: 2;
+}
+
 
 
 
