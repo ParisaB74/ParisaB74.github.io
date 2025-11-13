@@ -64,7 +64,7 @@ nav ul li a {
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 4px;
-  font-weight: bold;
+ 
   font-size: 18px; /* ← increase this value */
 
 }
@@ -1077,6 +1077,7 @@ html {
   transform: scale(1.08) translateY(-8px);
   box-shadow: 0 12px 30px rgba(0, 75, 141, 0.4);
 }
+
 
 
 
