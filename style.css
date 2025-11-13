@@ -1075,59 +1075,6 @@ html {
   box-shadow: 0 12px 30px rgba(0, 75, 141, 0.4);
 }
 
-/* --- Subtle Side Decorations --- */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: -40px;
-  width: 200px;
-  height: 200px;
-  border-top: 2px solid #dceaff;
-  border-left: 2px solid #dceaff;
-  border-radius: 100%;
-  z-index: -1;
-}
-
-body::after {
-  content: "";
-  position: fixed;
-  bottom: -40px;
-  right: -40px;
-  width: 200px;
-  height: 200px;
-  border-bottom: 2px solid #dceaff;
-  border-right: 2px solid #dceaff;
-  border-radius: 100%;
-  z-index: -1;
-}
-
-
-/* --- Subtle Vertical Side Decorations for HOME PAGE ONLY --- */
-.home-page::before,
-.home-page::after {
-  content: "";
-  position: fixed;
-  width: 160px;
-  height: 300px;
-  background: radial-gradient(circle at center, rgba(0,75,141,0.08), transparent 70%);
-  z-index: 0;
-  pointer-events: none;
-}
-
-/* Left decoration */
-.home-page::before {
-  left: 0;
-  top: 25%;
-}
-
-/* Right decoration */
-.home-page::after {
-  right: 0;
-  top: 55%;
-}
-
-
 
 
 
