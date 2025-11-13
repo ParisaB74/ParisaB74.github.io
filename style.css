@@ -667,7 +667,7 @@ footer {
 
 /* Link styling inside dropdown */
 .dropdown-content a {
-  color: #004b8d;
+  color: #003B73;
   padding: 10px 16px;
   text-decoration: none;
   display: block;
@@ -1077,6 +1077,7 @@ html {
   transform: scale(1.08) translateY(-8px);
   box-shadow: 0 12px 30px rgba(0, 75, 141, 0.4);
 }
+
 
 
 
