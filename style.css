@@ -1280,7 +1280,7 @@ html {
   content: "";
   position: absolute;
   top: 40px;
-  left: -20px;
+  left: -40px;
   width: 180px;
   height: 110px;
   border: 2px solid rgba(0, 75, 141, 0.12);
@@ -1314,7 +1314,7 @@ html {
 /* small rectangle near bottom left */
 .expertise-rect-1 {
   bottom: 20px;
-  left: 20%;
+  left: 50%;
   width: 90px;
   height: 60px;
 }
@@ -1360,6 +1360,7 @@ html {
   z-index: 0;
   pointer-events: none;
 }
+
 
 
 
