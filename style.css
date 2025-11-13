@@ -1256,6 +1256,7 @@ html {
   padding: 80px 10%;
   background: #ffffff;
   overflow: hidden;
+  text-align: center;    /* ← put this back */
 }
 
 /* Rectangle 1 – large left */
@@ -1300,7 +1301,7 @@ html {
   left: 70%;
   width: 90px;
   height: 60px;
-  background: rgba(255, 215, 0, 0.10);
+  background: rgba(217, 198, 144, 0.18);
 
   transform: rotate(-8deg);
 }
@@ -1347,6 +1348,7 @@ html {
   pointer-events: none;
   transform: rotate(8deg);
 }
+
 
 
 
