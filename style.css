@@ -1266,17 +1266,24 @@ html {
   transform: rotate(25deg);
   z-index: 0;
 }
+.expertise-section {
+  position: relative;
+  padding: 80px 10%;
+  background: #ffffff;
+  overflow: hidden;
+}
 
-/* second crossing stroke */
-.expertise-section::after {
+/* faint dotted matrix */
+.expertise-section::before {
   content: "";
   position: absolute;
-  bottom: 20px;
-  right: 15%;
-  width: 180px;
-  height: 2px;
-  background-color: rgba(0,75,141,0.15);
-  transform: rotate(-20deg);
+  top: 30px;
+  right: 40px;
+  width: 140px;
+  height: 140px;
+  background-image: radial-gradient(rgba(0,75,141,0.15) 1px, transparent 1px);
+  background-size: 12px 12px;
+  opacity: 0.4;
   z-index: 0;
 }
 
