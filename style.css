@@ -1313,8 +1313,8 @@ html {
 
 /* small rectangle near bottom left */
 .expertise-rect-1 {
-  bottom: 20px;
-  left: 50%;
+  bottom: -10px;
+  left: 30%;
   width: 90px;
   height: 60px;
 }
@@ -1361,6 +1361,7 @@ html {
   pointer-events: none;
   transform: rotate(8deg);
 }
+
 
 
 
