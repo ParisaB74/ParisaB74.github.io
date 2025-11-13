@@ -137,11 +137,18 @@ footer {
 }
 
 .home-text h1 {
+  display: inline-block;
+  white-space: nowrap;
   font-size: 42px;
   color: #004b8d;
   margin-bottom: 20px;
   font-weight: 700;
+  letter-spacing: 0.5px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  transform: translateZ(0); /* locks the layer to GPU and stabilizes layout */
 }
+
 
 .home-text p {
   font-size: 22px;
@@ -1070,6 +1077,7 @@ html {
   transform: scale(1.08) translateY(-8px);
   box-shadow: 0 12px 30px rgba(0, 75, 141, 0.4);
 }
+
 
 
 
