@@ -1077,7 +1077,7 @@ html {
 .why-choose-us {
   position: relative;
   padding: 80px 10%;
-  background: #f5f0ff; /* soft gentle purple */
+  background: #FFF7EA; /* soft gentle purple */
   text-align: center;
   overflow: hidden; /* needed for fades */
 }
@@ -1348,6 +1348,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   pointer-events: none;
   transform: rotate(8deg);
 }
+
 
 
 
