@@ -1134,7 +1134,7 @@ html {
 
 .why-icon {
   font-size: 32px;
-  color: #4a2c82;
+  color: #003B73;
   margin-bottom: 15px;
 }
 
@@ -1348,6 +1348,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   pointer-events: none;
   transform: rotate(8deg);
 }
+
 
 
 
