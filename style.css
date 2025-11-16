@@ -1077,7 +1077,7 @@ html {
 .why-choose-us {
   position: relative;
   padding: 80px 10%;
-  background: #FFF7EA; /* soft gentle purple */
+  background: #FAF3D0; /* soft gentle purple */
   text-align: center;
   overflow: hidden; /* needed for fades */
 }
@@ -1108,7 +1108,7 @@ html {
 
 .why-choose-us h2 {
   font-size: 42px;
-  color: #4a2c82; /* deeper purple for contrast */
+  color: #003B73; /* deeper purple for contrast */
   margin-bottom: 40px;
   font-weight: 700;
 }
@@ -1140,7 +1140,7 @@ html {
 
 .why-item h3 {
   font-size: 20px;
-  color: #4a2c82;
+  color: #003B73;
   margin-bottom: 10px;
   font-weight: 700;
 }
@@ -1348,6 +1348,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   pointer-events: none;
   transform: rotate(8deg);
 }
+
 
 
 
