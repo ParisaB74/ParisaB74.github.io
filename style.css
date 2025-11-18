@@ -1472,38 +1472,82 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 }
 
 
-.services-benefits {
-  text-align: center;
-  padding: 50px 10%;
-  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
-  margin-top: 40px;
-  margin-bottom: 40px;
+.why-services {
+  padding: 60px 10%;
+  background-color: #ffffff;
+  text-align: left;
 }
 
-.services-benefits h2 {
+.why-services h2 {
+  color: #003B73;
   font-size: 32px;
   font-weight: 700;
-  color: #003B73;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
-.services-benefits ul {
+.why-services ul {
   list-style: none;
   padding: 0;
-  margin: 0;
-}
-
-.services-benefits li {
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.8;
   color: #333;
-  margin-bottom: 12px;
-  font-weight: 500;
+}
+
+.why-services li {
+  margin-bottom: 10px;
+}
+
+.pain-points {
+  padding: 60px 10%;
+  background-color: #f9f9f9;
+  text-align: left;
+  border-top: 3px solid #003B73;
+  border-bottom: 3px solid #003B73;
+}
+
+.pain-points h2 {
+  color: #003B73;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.pain-points ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.pain-points li {
+  margin-bottom: 10px;
 }
 
 
 
+.success-story {
+  padding: 60px 10%;
+  background-color: #f4f9ff;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 40px;
+}
 
+.success-story h2 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #003B73;
+  margin-bottom: 20px;
+}
 
+.success-story p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 
 
