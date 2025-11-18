@@ -1330,7 +1330,7 @@ html {
   bottom: -60px;
   left: 70%;
   width: 130px;
-  height: 110px;
+  height: 90px;
 border: 2px solid rgba(181, 140, 44, 0.55);
 
   transform: rotate(-8deg);
@@ -1404,15 +1404,34 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   z-index: 0;
 }
 
+/* Top-left rectangle (keep gold) */
 .services-cta::before {
+  content: "";
+  position: absolute;
   top: 20px;
   left: -60px;
+  width: 180px;
+  height: 120px;
+  border: 2px solid rgba(212,175,55,0.25); /* gold */
+  border-radius: 10px;
+  transform: rotate(12deg);
+  z-index: 0;
 }
 
+/* Bottom-right rectangle (make navy) */
 .services-cta::after {
+  content: "";
+  position: absolute;
   bottom: 20px;
   right: -60px;
+  width: 180px;
+  height: 120px;
+  border: 2px solid rgba(0,59,115,0.25); /* NAVY */
+  border-radius: 10px;
+  transform: rotate(12deg);
+  z-index: 0;
 }
+
 
 .services-cta h2 {
   font-size: 40px;
@@ -1451,6 +1470,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   background-color: #00264D;
   transform: translateY(-3px);
 }
+
 
 
 
