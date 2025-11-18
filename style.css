@@ -1550,6 +1550,79 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 }
 
 
+/* Modern flowing section for Services */
+.services-flow {
+  padding: 80px 10%;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Soft gradient floating behind content */
+.services-flow::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -80px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0,59,115,0.08), transparent 70%);
+  filter: blur(10px);
+  border-radius: 50%;
+}
+
+.services-flow::after {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  left: -80px;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(212,175,55,0.10), transparent 70%);
+  filter: blur(12px);
+  border-radius: 50%;
+}
+
+/* Each row flows naturally like a website stripe */
+.flow-row {
+  padding: 60px 0;
+  margin: 0 auto;
+  max-width: 850px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.flow-row:last-child {
+  border-bottom: none;
+}
+
+.flow-text h2 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #003B73;
+  margin-bottom: 15px;
+}
+
+.flow-text p {
+  font-size: 20px;
+  color: #444;
+  line-height: 1.7;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* Smooth fade on scroll using your existing "fade-in" class */
+.flow-row {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.flow-row.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 
