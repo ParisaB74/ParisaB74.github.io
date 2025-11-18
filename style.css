@@ -1379,6 +1379,79 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   transform: rotate(8deg);
 }
 
+/* --- Services CTA Section --- */
+.services-cta {
+  background: linear-gradient(135deg, #fdf6d8, #f9e9a4); /* soft gold blend */
+  padding: 80px 12%;
+  text-align: center;
+  border-top: 4px solid #D4AF37;    /* strong gold top border */
+  border-bottom: 4px solid #D4AF37; /* strong gold bottom border */
+  margin-top: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* gold decorative shapes */
+.services-cta::before,
+.services-cta::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 120px;
+  border: 2px solid rgba(212,175,55,0.25);
+  border-radius: 10px;
+  transform: rotate(12deg);
+  z-index: 0;
+}
+
+.services-cta::before {
+  top: 20px;
+  left: -60px;
+}
+
+.services-cta::after {
+  bottom: 20px;
+  right: -60px;
+}
+
+.services-cta h2 {
+  font-size: 40px;
+  color: #003B73;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2; /* above the rectangles */
+}
+
+.services-cta p {
+  font-size: 20px;
+  color: #222;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.7;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #003B73;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.25s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-button:hover {
+  background-color: #00264D;
+  transform: translateY(-3px);
+}
+
 
 
 
