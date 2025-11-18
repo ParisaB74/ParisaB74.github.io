@@ -1472,6 +1472,34 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 }
 
 
+.services-benefits {
+  text-align: center;
+  padding: 50px 10%;
+  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.services-benefits h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #003B73;
+  margin-bottom: 25px;
+}
+
+.services-benefits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services-benefits li {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
 
 
 
