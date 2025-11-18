@@ -1410,8 +1410,8 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   position: absolute;
   top: 20px;
   left: -60px;
-  width: 180px;
-  height: 120px;
+  width: 140px;
+  height: 90px;
   border: 2px solid rgba(212,175,55,0.25); /* gold */
   border-radius: 10px;
   transform: rotate(12deg);
@@ -1424,8 +1424,8 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   position: absolute;
   bottom: 20px;
   right: -60px;
-  width: 180px;
-  height: 120px;
+  width: 140px;
+  height: 90px;
   border: 2px solid rgba(0,59,115,0.25); /* NAVY */
   border-radius: 10px;
   transform: rotate(12deg);
@@ -1470,6 +1470,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   background-color: #00264D;
   transform: translateY(-3px);
 }
+
 
 
 
