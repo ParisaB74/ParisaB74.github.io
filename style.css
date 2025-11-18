@@ -637,6 +637,36 @@ footer {
     width: 90%;
   }
 }
+/* --- Improved Service Card Readability + Soft Contrast --- */
+
+/* Base card improvement */
+.service-card {
+  background: linear-gradient(145deg, #ffffff, #fafafa);
+  border: 1px solid rgba(0,0,0,0.06); /* softer border */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06); /* softer initial shadow */
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+/* Hover effect */
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  border-color: #D4AF37; /* elegant gold highlight */
+  background: linear-gradient(145deg, #ffffff, #fdfbf5); /* warm subtle glow */
+}
+
+/* Headings inside cards */
+.service-card h2 {
+  font-weight: 700;
+  color: #003B73;
+  letter-spacing: 0.3px;
+}
+
+/* Text inside cards */
+.service-card p {
+  color: #333333;
+  line-height: 1.65;
+}
 
 
 /* Dropdown menu */
@@ -1348,6 +1378,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   pointer-events: none;
   transform: rotate(8deg);
 }
+
 
 
 
