@@ -1241,7 +1241,9 @@ html {
 .expertise-card h2 {
   font-size: 22px;
   color: #004b8d;
-  margin-bottom: 10px;
+   margin: 0 0 10px;
+  text-align: center;
+   width: 100%;
   font-weight: 700;
 }
 
@@ -1286,7 +1288,7 @@ html {
   content: "";
   position: absolute;
   bottom: 40px;
-  right: -10px;
+  left: 5px;
   width: 120px;
   height: 200px;
   border: 2px solid rgba(0, 75, 141, 0.12);
@@ -1610,6 +1612,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   position: relative;
   z-index: 5;
 }
+
 
 
 
