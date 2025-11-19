@@ -1687,6 +1687,108 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   transform: translateY(0);
 }
 
+/* --- Modern Alternating Flow Sections --- */
+
+/* Main wrapper */
+.services-flow {
+  margin-top: 20px;
+  padding: 0;
+}
+
+/* Each row becomes a “block” */
+.flow-row {
+  padding: 100px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+  min-height: 260px;
+}
+
+/* Alternate background color */
+.flow-row:nth-child(odd) {
+  background: #f7faff; /* light blue tint */
+}
+.flow-row:nth-child(even) {
+  background: #fff8e3; /* very soft gold tint */
+}
+
+/* Flow text block */
+.flow-text {
+  max-width: 550px;
+  text-align: left;
+}
+
+/* Title styling */
+.flow-text h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #003B73;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+/* Gold underline */
+.flow-text h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 60px;
+  height: 4px;
+  background: #D4AF37;
+  border-radius: 2px;
+}
+
+/* Paragraph styling */
+.flow-text p {
+  font-size: 20px;
+  color: #444;
+  line-height: 1.75;
+}
+
+/* Large background step number */
+.flow-row::before {
+  content: attr(data-step);
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  font-size: 110px;
+  font-weight: 900;
+  color: rgba(0,59,115,0.07);
+  pointer-events: none;
+}
+
+/* For alternating layout */
+.flow-row.right .flow-text {
+  text-align: right;
+}
+.flow-row.right::before {
+  left: auto;
+  right: 10%;
+  text-align: right;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .flow-row {
+    flex-direction: column;
+    text-align: center;
+    padding: 70px 5%;
+  }
+  .flow-row::before {
+    font-size: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .flow-text h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 
 
 
