@@ -588,6 +588,9 @@ footer {
   background-color: #ffffff;
  
 }
+.services-grid {
+  margin-bottom: 40px;
+}
 
 
 .service-card {
@@ -1185,15 +1188,7 @@ html {
 
 
 /* Fade gradient top + bottom to match your other sections */
-.expertise-section::before,
-.expertise-section::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  pointer-events: none;
-}
+
 
 .expertise-section::before {
   top: 0;
@@ -1268,26 +1263,8 @@ html {
 
 
 /* diagonal stroke */
-.expertise-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 10%;
-  width: 200px;
-  height: 2px;
-  background-color: rgba(0,75,141,0.15);
-  transform: rotate(25deg);
-  z-index: 0;
-}
 
 /* Minimal modern rectangles background */
-.expertise-section {
-  position: relative;
-  padding: 80px 10%;
-  background: #ffffff;
-  overflow: hidden;
-  text-align: center;    /* ← put this back */
-}
 
 /* Rectangle 1 – large left */
 .expertise-section::before {
@@ -1623,6 +1600,14 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   transform: translateY(0);
 }
 
+
+.pain-points,
+.why-services,
+.success-story,
+.services-flow {
+  position: relative;
+  z-index: 5;
+}
 
 
 
