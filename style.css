@@ -1571,8 +1571,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 
 /* Smooth fade on scroll using your existing "fade-in" class */
 .flow-row {
-  opacity: 0;
-  transform: translateY(40px);
+ 
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
@@ -1599,6 +1598,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   padding: 20px 10% 30px;
   margin-top: -20px;   /* pulls content up to remove the gap cleanly */
 }
+
 
 
 
