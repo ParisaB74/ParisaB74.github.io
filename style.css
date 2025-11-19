@@ -1790,6 +1790,14 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 }
 
 
+.services-intro p,
+.flow-text p {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+  display: block !important;
+}
+
 
 
 
