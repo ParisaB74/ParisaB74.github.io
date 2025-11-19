@@ -1540,29 +1540,6 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 }
 
 /* Soft gradient floating behind content */
-.services-flow::before {
-  content: "";
-  position: absolute;
-  top: -60px;
-  right: -80px;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(0,59,115,0.08), transparent 70%);
-  filter: blur(10px);
-  border-radius: 50%;
-}
-
-.services-flow::after {
-  content: "";
-  position: absolute;
-  bottom: -80px;
-  left: -80px;
-  width: 350px;
-  height: 350px;
-  background: radial-gradient(circle, rgba(212,175,55,0.10), transparent 70%);
-  filter: blur(12px);
-  border-radius: 50%;
-}
 
 /* Each row flows naturally like a website stripe */
 .flow-row {
@@ -1612,6 +1589,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   position: relative;
   z-index: 5;
 }
+
 
 
 
