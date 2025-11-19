@@ -1204,7 +1204,9 @@ html {
   font-size: 42px;
   font-weight: 700;
   color: #004b8d;
-  margin-bottom: 10px;
+   margin: 0 0 10px;
+  text-align: center;
+   width: 100%; 
 }
 
 .expertise-subtitle {
@@ -1284,7 +1286,7 @@ html {
   content: "";
   position: absolute;
   bottom: 40px;
-  right: -40px;
+  right: -10px;
   width: 120px;
   height: 200px;
   border: 2px solid rgba(0, 75, 141, 0.12);
@@ -1305,7 +1307,7 @@ html {
 /* small rectangle near bottom left */
 .expertise-rect-1 {
   bottom: -60px;
-  left: 70%;
+  left: 40%;
   width: 130px;
   height: 90px;
 border: 2px solid rgba(181, 140, 44, 0.55);
@@ -1608,6 +1610,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   position: relative;
   z-index: 5;
 }
+
 
 
 
