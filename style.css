@@ -1599,6 +1599,94 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   margin-top: -20px;   /* pulls content up to remove the gap cleanly */
 }
 
+/* --- MODERN IMPROVED SERVICES FLOW SECTION --- */
+
+.services-flow {
+  padding: 80px 10%;
+  position: relative;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* Background soft blobs */
+.services-flow::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -120px;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(0,59,115,0.08), transparent 70%);
+  filter: blur(8px);
+  border-radius: 50%;
+}
+
+.services-flow::after {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: -120px;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(212,175,55,0.15), transparent 70%);
+  filter: blur(12px);
+  border-radius: 50%;
+}
+
+/* Each row */
+.flow-row {
+  padding: 70px 0;
+  max-width: 860px;
+  margin: 0 auto;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+/* Alternating alignment */
+.flow-row.left .flow-text {
+  text-align: left;
+}
+
+.flow-row.right .flow-text {
+  text-align: right;
+}
+
+/* Text styling */
+.flow-text h2 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #003B73;
+  margin-bottom: 15px;
+}
+
+.flow-text p {
+  font-size: 20px;
+  color: #444;
+  line-height: 1.75;
+}
+
+/* Separator line */
+.flow-row:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 50%;
+  height: 1px;
+  background: rgba(0,0,0,0.08);
+}
+
+/* Fade-in animation */
+.flow-row {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.flow-row.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 
