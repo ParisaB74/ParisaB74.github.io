@@ -1856,6 +1856,50 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 }
 
 
+.services-flow {
+  padding: 80px 10%;
+  background: #ffffff;
+  text-align: center;
+}
+
+.flow-title {
+  font-size: 38px;
+  color: #003B73;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+/* turn rows into cards */
+.flow-row {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 18px;
+  padding: 35px 30px;
+  margin-bottom: 35px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.flow-row:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+/* numbering circles */
+.flow-number {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #003B73;
+  color: white;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  font-weight: bold;
+}
+
 
 
 
