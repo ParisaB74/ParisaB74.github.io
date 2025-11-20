@@ -1962,16 +1962,6 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 }
  
 /* Modern Services Intro */
- .services-intro-modern {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 70px 10%;
-  background: linear-gradient(to right, #f7fbff, #fffaf4);
-  border-radius: 12px;
-  margin-top: 30px;
-  gap: 60px;
-}
 
 .services-intro-modern h2 {
   font-size: 32px;
@@ -1987,29 +1977,6 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   max-width: 550px;
 }
 
-.intro-left {
-  flex: 1;
-  min-width: 300px;
-}
-
-.intro-right {
-  flex: 1;
-  min-width: 280px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.intro-feature {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding: 18px 20px;
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(0, 75, 141, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
 .intro-feature:hover {
   transform: translateY(-5px);
@@ -2042,12 +2009,6 @@ border: 2px solid rgba(181, 140, 44, 0.55);
     justify-content: center;
   }
 } 
-.services-intro-modern {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;   /* <— THIS FIXES THE MISALIGNMENT */
-  gap: 40px;
-}
 
 
 .icon-block img {
@@ -2061,13 +2022,6 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   padding-top: 8px;    /* gently lifts the title upward */
 }
 
-.services-intro-modern {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 60px;
-  padding: 80px 10%;
-  align-items: start; /* keeps everything aligned visually */
-}
 
 .services-intro-modern .intro-left h2 {
   font-size: 36px;
@@ -2134,6 +2088,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
     width: 90%;
   }
 }
+
 
 
 
