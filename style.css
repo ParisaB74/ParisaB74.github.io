@@ -2050,6 +2050,17 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 }
 
 
+.icon-block img {
+  height: 40px;        /* make all icons same height */
+  width: 40px;         /* square shape */
+  object-fit: contain;
+  margin-bottom: 12px; /* even spacing */
+}
+
+.services-intro-modern .left-text {
+  padding-top: 8px;    /* gently lifts the title upward */
+}
+
 
 
 
