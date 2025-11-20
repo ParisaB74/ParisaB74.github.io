@@ -1909,7 +1909,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 }
 
 /* subtle decorative shape */
-/* .services-intro::before {
+ .services-intro::before {
   content: "";
   position: absolute;
   top: -30px;
@@ -1942,7 +1942,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 }
 
 /* Icon row under intro paragraph */
-/*.services-intro-icons {
+.services-intro-icons {
   display: flex;
   justify-content: center;
   gap: 25px;
@@ -1960,102 +1960,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   font-weight: 600;
   border-left: 4px solid #003B73;
 }
- */
-
-/* --- Enhanced Services Intro --- */
-
-.enhanced-intro {
-  display: flex;
-  justify-content: space-between;
-  gap: 60px;
-  padding: 80px 10%;
-  background: #ffffff;
-  position: relative;
-}
-
-/* Left side (main text) */
-.enhanced-intro .intro-left {
-  flex: 1.2;
-}
-
-.enhanced-intro h2 {
-  font-size: 32px;
-  font-weight: 700;
-  color: #003B73;
-  margin-bottom: 25px;
-  line-height: 1.3;
-}
-
-.enhanced-intro p {
-  font-size: 18px;
-  color: #444;
-  line-height: 1.7;
-  margin-bottom: 20px;
-}
-
-/* Highlight paragraph */
-.intro-highlight {
-  background: #f0f6ff;
-  padding: 15px 20px;
-  border-left: 4px solid #003B73;
-  border-radius: 6px;
-  font-weight: 500;
-}
-
-/* Right side (visualised bullet points) */
-.enhanced-intro .intro-right {
-  flex: 0.9;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-}
-
-.icon-line {
-  font-size: 18px;
-  color: #003B73;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 0.8s ease-out forwards;
-}
-
-/* Stagger animation */
-.icon-line:nth-child(1) { animation-delay: 0.4s; }
-.icon-line:nth-child(2) { animation-delay: 0.6s; }
-.icon-line:nth-child(3) { animation-delay: 0.8s; }
-
-/* Dot icon */
-.icon-line .dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #D4AF37; /* gold */
-  box-shadow: 0 0 8px rgba(212,175,55,0.45);
-}
-
-/* Animation for text */
-@keyframes fadeUp {
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Mobile layout */
-@media (max-width: 900px) {
-  .enhanced-intro {
-    flex-direction: column;
-    text-align: left;
-  }
-
-  .intro-right {
-    margin-top: 20px;
-  }
-}
-
-
-
+ 
 
 
 
