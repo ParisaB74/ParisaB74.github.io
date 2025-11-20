@@ -2089,6 +2089,12 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   }
 }
 
+.services-intro-modern,
+.intro-left,
+.intro-right {
+    text-align: left !important;
+}
+
 
 
 
