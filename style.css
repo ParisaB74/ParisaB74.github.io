@@ -1899,24 +1899,30 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   margin: 0 auto 20px;
   font-weight: bold;
 }
-
-.icon-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 50px 8%;
+.modern-intro {
+  background: #f9fcff;
+  padding: 60px 10%;
   text-align: center;
+  border-radius: 12px;
+  margin-bottom: 50px;
+  box-shadow: 0 8px 30px rgba(0, 75, 141, 0.05);
 }
 
-.icon-block img {
-  width: 70px;
-  opacity: 0.85;
+.modern-intro h2 {
+  font-size: 34px;
+  color: #003B73;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-.icon-block p {
-  font-size: 18px;
-  margin-top: 10px;
+.modern-intro p {
+  font-size: 20px;
+  color: #444;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto;
 }
+
 
 
 
