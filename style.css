@@ -2126,6 +2126,77 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 
 
 
+/* === FINAL OVERRIDE: Services Flow layout + step numbers === */
+
+.services-flow {
+  padding: 80px 10%;
+  background: #ffffff;
+  text-align: left;          /* no more centered text */
+}
+
+/* Each row as a clean card */
+.flow-row {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto 35px;
+  padding: 40px 40px 35px 110px;  /* extra left padding to make room for the number */
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.flow-row:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+/* Step number – small, in the corner, behind text */
+.flow-row::before {
+  content: attr(data-step);
+  position: absolute;
+  top: 22px;
+  left: 24px;
+  font-size: 28px;
+  font-weight: 800;
+  color: rgba(0,59,115,0.35);  /* subtle navy */
+  z-index: 0;
+}
+
+/* Ensure text always sits above the number */
+.flow-text {
+  position: relative;
+  z-index: 1;
+}
+
+.flow-text h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #003B73;
+  margin-bottom: 10px;
+}
+
+.flow-text p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .flow-row {
+    padding: 30px 20px 25px 75px;
+  }
+
+  .flow-row::before {
+    top: 18px;
+    left: 20px;
+    font-size: 22px;
+  }
+}
+
+
 
 
 
