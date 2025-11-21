@@ -1972,7 +1972,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   background: linear-gradient(to right, #f7fbff, #fffaf4);
   border-radius: 12px;
   margin-top: 30px;
-  align-items: flex-start;
+  align-items: center;
 }
 
 /* Left side: heading + paragraph */
@@ -2052,6 +2052,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
     width: 100%;
   }
 }
+
 
 
 
