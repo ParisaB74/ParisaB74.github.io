@@ -2197,6 +2197,40 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 }
 
 
+/* === BIGGER + LOWER SIDE NUMBERS === */
+
+.flow-row::before {
+  content: attr(data-step);
+  position: absolute;
+  top: 58%;                 /* moved slightly lower */
+  left: -30px;              /* sits outside box */
+  transform: translateY(-50%);
+  font-size: 150px;         /* bigger number */
+  font-weight: 900;
+  color: rgba(0,59,115,0.10);
+  pointer-events: none;
+}
+
+/* EVEN ROWS — number on the right side */
+.flow-row.right::before {
+  left: auto;
+  right: -30px;             /* same outside spacing */
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .flow-row::before {
+    font-size: 100px;        /* mobile size */
+    left: 10px;
+    top: 55%;
+    opacity: 0.12;
+  }
+
+  .flow-row.right::before {
+    right: 10px;
+  }
+}
+
 
 
 
