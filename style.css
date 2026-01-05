@@ -1632,7 +1632,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 .services-intro p {
   max-width: 800px;
   margin: 0 auto 35px;
-  font-size: 20px;
+  font-size: 22px;
   color: #444;
   line-height: 1.75;
   position: relative;
@@ -2284,6 +2284,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
     text-justify: inter-word;
     line-height: 1.6; /* optional, makes it easier to read */
 }
+
 
 
 
