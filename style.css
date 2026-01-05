@@ -1814,14 +1814,15 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 .flow-row::before {
   content: attr(data-step);
   position: absolute;
-  top: 50%;
-  left: 10%;
+  top: 58%;                 
+  left: -30px;              /* sits outside box */
   transform: translateY(-50%);
-  font-size: 110px;
+  font-size: 150px;         
   font-weight: 900;
-  color: rgba(0,59,115,0.07);
+  color: rgba(0,59,115,0.10);
   pointer-events: none;
 }
+
 
 /* For alternating layout */
 .flow-row.right .flow-text {
@@ -1829,8 +1830,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 }
 .flow-row.right::before {
   left: auto;
-  right: 10%;
-  text-align: right;
+  right: -30px;             /* same outside spacing */
 }
 
 /* Mobile */
@@ -2238,6 +2238,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
     right: 10px;
   }
 }
+
 
 
 
