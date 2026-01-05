@@ -2269,6 +2269,14 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   right: 20px;
 }
 
+.flow-text {
+  position: relative; /* keep the text above the number */
+  z-index: 1;
+  text-align: justify; /* justify text */
+  max-width: 85%; /* leave space for the number */
+  margin: 0 auto; /* center the text container */
+}
+
 
 
 
