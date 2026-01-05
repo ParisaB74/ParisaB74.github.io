@@ -1566,7 +1566,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 }
 
 .flow-text p {
-  font-size: 20px;
+  font-size: 22px;
   color: #444;
   line-height: 1.7;
   max-width: 750px;
@@ -2284,6 +2284,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
     text-justify: inter-word;
     line-height: 1.6; /* optional, makes it easier to read */
 }
+
 
 
 
