@@ -2236,28 +2236,39 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   }
 }
 
-/* ===== FIX FLOW CARD NUMBERS ===== */
+/* === BIG SIDE NUMBERS INSIDE BOXES === */
 
 .flow-row {
   position: relative;
-  padding-top: 70px;     /* creates space for the number inside */
+  padding: 40px 40px 40px 110px; /* room on left for normal */
+}
+
+.flow-row.right {
+  padding: 40px 110px 40px 40px; /* room on right for .right */
 }
 
 .flow-row::before {
   content: attr(data-step);
   position: absolute;
-  top: 20px;             /* now INSIDE the box */
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 56px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 125px;       /* big number */
   font-weight: 900;
-  color: rgba(0, 59, 115, 0.15);
+  color: rgba(0, 59, 115, 0.10);
+  pointer-events: none;   /* doesn’t interfere with text */
 }
 
-.flow-row.right::before {
-  left: 50%;
-  right: auto;
+/* Left side number */
+.flow-row::before {
+  left: 20px;
 }
+
+/* Right side number */
+.flow-row.right::before {
+  left: auto;
+  right: 20px;
+}
+
 
 
 
