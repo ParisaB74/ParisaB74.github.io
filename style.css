@@ -1542,11 +1542,17 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 
 /* Each row flows naturally like a website stripe */
 .flow-row {
-  padding: 60px 0;
-  margin: 0 auto;
-  max-width: 850px;
-  text-align: center;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 18px;
+  padding: 35px 30px 40px;
+  margin-bottom: 35px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;        /* ← this locks content inside */
+  text-align: center;         /* ← keeps the card balanced */
 }
 
 .flow-row:last-child {
@@ -1886,18 +1892,21 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 
 /* numbering circles */
 .flow-number {
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background: #003B73;
   color: white;
-  font-size: 22px;
+  font-size: 24px;
+  font-weight: 700;
+
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 0 auto 20px;
-  font-weight: bold;
+  justify-content: center;
+
+  margin-bottom: 18px;        /* no auto centering */
 }
+
 
 .services-intro {
   background: #f7fbff;
@@ -2229,6 +2238,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
     right: 10px;
   }
 }
+
 
 
 
