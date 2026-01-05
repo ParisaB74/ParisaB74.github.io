@@ -1813,14 +1813,13 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 /* Large background step number */
 .flow-row::before {
   content: attr(data-step);
-  position: absolute;
-  top: 58%;                 
-  left: -30px;              /* sits outside box */
-  transform: translateY(-50%);
-  font-size: 150px;         
+  position: relative;
+  display: block;
+  margin: 0 auto 15px;     /* centers and adds spacing */
+  font-size: 72px;         /* large but inside */
   font-weight: 900;
-  color: rgba(0,59,115,0.10);
-  pointer-events: none;
+  color: rgba(0,59,115,0.15);
+  text-align: center;      /* centers the number */
 }
 
 
@@ -1829,10 +1828,8 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   text-align: right;
 }
 .flow-row.right::before {
-  left: auto;
-  right: -30px;             /* same outside spacing */
+  /* no extra positioning needed for right cards */
 }
-
 /* Mobile */
 @media (max-width: 900px) {
   .flow-row {
@@ -2238,6 +2235,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
     right: 10px;
   }
 }
+
 
 
 
