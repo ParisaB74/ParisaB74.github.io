@@ -2270,12 +2270,14 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 }
 
 .flow-text {
-  position: relative; /* keep the text above the number */
+  position: relative;
   z-index: 1;
-  text-align: justify; /* justify text */
-  max-width: 85%; /* leave space for the number */
-  margin: 0 auto; /* center the text container */
+  text-align: justify;    /* justify the text */
+  max-width: 85%;         /* keep text from stretching too wide */
+  margin: 0 auto;         /* center the text container */
+  padding-left: 3rem;     /* space between number on left and text */
 }
+
 
 
 
