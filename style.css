@@ -1504,7 +1504,11 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   margin-bottom: 10px;
 }
 
-
+.pain-points p {
+  text-align: justify;   /* spreads text evenly across the container */
+  text-justify: inter-word; /* optional, for better spacing */
+  line-height: 1.75;    /* adjust for readability */
+}
 
 .success-story {
   padding: 60px 10%;
@@ -2277,6 +2281,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   margin: 0 auto;         /* center the text container */
   padding-left: 4rem;     /* space between number on left and text */
 }
+
 
 
 
