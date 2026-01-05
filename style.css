@@ -2275,8 +2275,9 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   text-align: justify;    /* justify the text */
   max-width: 85%;         /* keep text from stretching too wide */
   margin: 0 auto;         /* center the text container */
-  padding-left: 3rem;     /* space between number on left and text */
+  padding-left: 4rem;     /* space between number on left and text */
 }
+
 
 
 
