@@ -2236,6 +2236,16 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   }
 }
 
+/* ---- FIX SERVICE BOX ALIGNMENT ---- */
+
+.service-box {
+  padding: 35px 25px;       /* gives the box proper breathing room */
+}
+
+.service-box h3 {
+  margin-top: 10px;        /* removes the upward pull */
+}
+
 
 
 
