@@ -2277,17 +2277,12 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   padding-left: 4rem;     /* space between number on left and text */
 }
 
-/* Justify the paragraph text in the services flow section */
-.services-flow .flow-text p {
+
+/* Justify the main intro paragraph on the Services page */
+.services-intro-modern .intro-left p {
     text-align: justify;
     text-justify: inter-word;
-    line-height: 1.75; /* optional for better readability */
-}
-
-/* Keep headings centered */
-.services-flow .flow-text h2 {
-    text-align: center;
-    margin-bottom: 1rem;
+    line-height: 1.6; /* optional, makes it easier to read */
 }
 
 
