@@ -2236,16 +2236,28 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   }
 }
 
-/* ---- FIX SERVICE BOX ALIGNMENT ---- */
+/* ===== FIX FLOW CARD NUMBERS ===== */
 
-.service-box {
-  padding: 35px 25px;       /* gives the box proper breathing room */
+.flow-row {
+  position: relative;
+  padding-top: 70px;     /* creates space for the number inside */
 }
 
-.service-box h3 {
-  margin-top: 10px;        /* removes the upward pull */
+.flow-row::before {
+  content: attr(data-step);
+  position: absolute;
+  top: 20px;             /* now INSIDE the box */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 56px;
+  font-weight: 900;
+  color: rgba(0, 59, 115, 0.15);
 }
 
+.flow-row.right::before {
+  left: 50%;
+  right: auto;
+}
 
 
 
