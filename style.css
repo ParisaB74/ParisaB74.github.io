@@ -2294,10 +2294,10 @@ border: 2px solid rgba(181, 140, 44, 0.55);
 
 .quick-cta-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 30px;
 }
 
 .quick-cta p {
@@ -2321,6 +2321,7 @@ border: 2px solid rgba(181, 140, 44, 0.55);
   background: #0056a3;
   transform: translateY(-1px);
 }
+
 
 
 
