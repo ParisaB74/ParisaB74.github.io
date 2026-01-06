@@ -2285,6 +2285,43 @@ border: 2px solid rgba(181, 140, 44, 0.55);
     line-height: 1.6; /* optional, makes it easier to read */
 }
 
+.quick-cta {
+  background: #f2f6fb;
+  padding: 35px 10%;
+  margin: 50px 0;
+  border-radius: 14px;
+}
+
+.quick-cta-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.quick-cta p {
+  font-size: 1.2rem;
+  color: #003B73;
+  margin: 0;
+  font-weight: 500;
+}
+
+.quick-cta a {
+  background: #003B73;
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.quick-cta a:hover {
+  background: #0056a3;
+  transform: translateY(-1px);
+}
+
 
 
 
